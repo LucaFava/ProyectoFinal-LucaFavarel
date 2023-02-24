@@ -3,6 +3,11 @@ margin: 0px;}
 
 
 /* HEADER */
+.menu-hamburguesa{
+    display: none;
+}
+
+
 .lista{
     list-style: none;
     display: flex;
@@ -15,19 +20,25 @@ margin: 0px;}
 }
 
 .logo{
-    width: 70px;
-    height: 70px;
+    width: 10rem;
+    height: 5rem;
 }
-#logo_header{
-    width: 70px;
-    height: 70px;
+.logo img{
+    width: 10rem;
+    height: 5rem;
 }
 #grid_contenedor{
     display: grid;
     grid-template-columns: 10% 90%;
-    background-color: yellow;
+    background-color: rgb(0, 0, 130);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
 }
-
+a{
+    text-decoration: none;
+    text-decoration-style: none;
+    color: white;
+}
 /* SECCIONES */
 
 .seccion{
@@ -41,11 +52,12 @@ margin: 0px;}
     align-items: center;
     justify-content: center;
     height: 70%;
-    margin-top: 2rem;
+    margin: 2rem;
+    padding: 2rem;
 }
 .titulo h1{
     font-family: 'Bebas Neue', cursive;
-    font-size: 100px;
+    font-size: 10rem;
 }
 .titulo p{
     font-family: 'Roboto', sans-serif;
@@ -99,6 +111,119 @@ margin: 0px;}
     font-size: 5rem;
 }
 
+/* MEDIA QUERIES DEL INDEX, WIDTH 768PX*/
+
+@media screen and (max-width: 768px)  {
+    
+    .logo{
+        width: 10rem;
+        height: 5rem;
+        margin: 0.5rem;
+
+    }
+    .logo img{
+        width: 10rem;
+        height: 5rem;
+    }
+    
+    
+    #grid_contenedor{
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .secciones{
+        grid-template-columns: 2fr 1fr;
+        height: 25rem;
+    }
+    .titulo{
+        padding: 1.5rem;
+        margin: 1.5rem;
+    }
+    .titulo h1{
+        font-size: 3rem;
+    }
+    .titulo p{
+        font-size: 1.5rem;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .conector{
+        font-size: 1.7rem;
+    }
+    .img-contenedor{
+        height: 20rem;
+        width: 20rem;
+    }
+    .img{
+        height: 15rem;
+        width: 20rem;
+        border-radius: 5px;
+    }
+    .texto h2{
+        font-size: 3rem;
+    }
+    .texto p{
+        font-size: 1.2rem;
+    }
+    .texto{
+        padding: 1rem;
+    }
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .lista{
+        margin: 0px;
+    }
+}
+/* MEDIA QUERIES 320PX MOBILE */
+@media screen and (max-width: 320px){
+    #grid_contenedor{
+        display: none;
+    }
+    .menu-hamburguesa{
+        display: block;
+        width: 320px;
+    }
+    .navbar{
+        width: 320px;
+    }
+    .container-fluid img{
+        height: 50px;
+        width: 100px;
+    }
+    
+    .seccion{
+        width: 100%;
+    }
+    .seccion p{
+        font-size: 1rem;
+    }
+    .titulo{
+        width: 100%;
+        padding: 0rem;
+        margin: 0.5rem;
+    }
+    .titulo p{
+        padding: 0rem;
+    }
+    .secciones img{
+        display: none;
+    }
+    .secciones{
+        grid-template-columns: 0fr;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .img-contenedor{
+        display: none;
+    }
+}
+
 /* INICIO */
 .h1{
     font-family: 'Bebas Neue', cursive;
@@ -107,46 +232,43 @@ margin: 0px;}
     font-size: 4rem;
 }
 /* CARD DE INICIO */
-.container-fluid{
-    background-color: aqua;
-    height: 25rem;
+
+.card-inicio-contenedor{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    background-color: rgb(207, 207, 207);
+    margin: 2.5rem;
+    height: 30rem;
     border-radius: 10px;
-    width: 95%;
 }
-.row{
-    height: 100%;
-    align-items: center;
-  
-}
-.col-xl-5 img{
-    height: 250px;
-    padding: 1rem;
-}
-.col-xl-5{
-    display: flex;
-    flex-direction: row;
-    align-items: center;    
-    padding: 80px;
-    
-}
-.col-xl-5 p{
-    width: 100%;
-    font-size: 4rem;
-    font-family: 'Bebas Neue', cursive;
-}
-.col-xl-2{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.col-xl-2 h2{
+.equipo1 p{
     font-family: 'Bebas Neue', cursive;
     font-size: 5rem;
 }
-.col-xl-2 p{
-    font-family: 'Roboto', sans-serif;
+.equipo1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.equipo1 img{
+    width: 22rem;
+    height: 20.5rem;
+    padding: 2rem;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.datos h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+}
+.datos p{
     font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .h1{
@@ -268,6 +390,90 @@ margin: 0px;}
     text-align: center;
 }
 /* ----------------------------- */
+/* MEIDA QUERIES DE INICIO 768PX */
+@media screen and (max-width: 768px){
+    #grid_contenedor{
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-between; 
+    }
+    .logo{
+        width: 10rem;
+        height: 5rem;
+        margin: 0.5rem;
+
+    }
+    .logo img{
+        width: 10rem;
+        height: 5rem;
+    }
+    .card-inicio-contenedor{
+        width: ;
+        margin: 0.5rem;
+        grid-template-columns: 2fr 1fr 2fr;
+        border-bottom-style: 100px;
+        background-color: rgb(207, 207, 207);
+    }
+    .equipo1{
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .equipo1 img{
+        width: 200px;
+        height: 200px;
+    }
+    .equipo1 p{
+        font-size: 3rem;
+    }
+    .article1 p{
+        font-size: 1rem;
+    }
+    .video{
+        padding: 0rem;
+    }
+    .video iframe{
+        width: 300px;
+    }
+    .grid{
+        padding: 1rem;
+        margin: 1rem;
+}
+/* SECCION 2 */
+.seccion2{
+    padding: 1rem;
+    margin: 1rem;
+}
+.seccion2 img{
+    width: 400px;
+    height: 250px;
+}
+.seccion2 p{
+    font-size: 0.9rem;
+}
+.jugada-semanal h2{
+    font-size: 2.5rem;
+}
+.jugada-semanal p{
+    font-size: 1.3rem;
+}
+.boton-historia{
+    padding: 1rem;
+}
+.btn{
+    width: 10rem;
+    height: 3rem;
+}
+}
+/* MEDIA QUERIES 320PX MOBILE */
+@media screen and (max-width: 320px){
+    #grid_contenedor{
+        display: none;
+    }
+
+
+}
 
 /* HISTORIA */
 .seccion-historia{
@@ -292,7 +498,7 @@ margin: 0px;}
     padding-top: 2rem;
 }
 /* ERAS */
-.grid{
+.grid-eras{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 0.5rem;
@@ -330,3 +536,40 @@ margin: 0px;}
 .carousel-item img{
     height:  55rem;
 }
+/* CALENDARIO */
+.col{
+    /* background-color: */
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 15rem;
+    align-items: center; 
+}
+.card-calendario{
+    display: flex;
+    flex-direction: column;
+}
+.col img{
+    height: 5rem;
+    width: 150px;
+}
+.row{
+    row-gap: 1rem;
+}
+.container-md{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+.nombre-equipo{
+    font-style: italic;
+}
+.titulo-calendario h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+}
+.titulo-calendario{
+    text-align: center;
+    margin: 2rem;
+    padding: 2rem;
+}
+

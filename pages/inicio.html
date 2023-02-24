@@ -15,9 +15,40 @@
 <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
+    <header class="menu-hamburguesa">
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <img src="../image/logo-Golden-State-Warriors.png" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./index.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/calendario.html">Calendario</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/historia.html">Historia</a>
+                      </li>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
     <header id="grid_contenedor">
         <div class="logo">
-            <img src="./image/logo warriors nuevo.png" alt="logo" id="logo_header">
+            <img src="../image/logo-Golden-State-Warriors.png" alt="logo" id="logo_header">
         </div>
         <div class="nav-bar">
             <ul class="lista">
@@ -34,23 +65,20 @@
         <article class="h1">
             <h1>Próximo partido</h1>
         </article>
-    <section class="container-fluid  text-center">
-
-        <div class="row">
-        <article class="col-xl-5">
+    <section class="card-inicio-contenedor">
+        <article class="equipo1">
                 <img src="../image/logo warriors nuevo.png" alt="equipo">
                 <p>99</p>
         </article>
-        <article class="col-xl-2">
+        <article class="datos">
             <p>En vivo</p>
             <h2>VS</h2>
             <p>1Q 00:00</p>
         </article>
-        <article class="col-xl-5">
+        <article class="equipo1">
             <p>99</p>
             <img src="../image/clippers logo.png" alt="">
         </article>
-        </div>
     </section>
     <!-- ---------------------------- -->
     <!-- SECCION 1 -->
@@ -129,8 +157,6 @@
             <p>Este equipo de la foto, la dinastia de los Golden State Warriors, fue (considerado por muchos) uno de los mejores equipos de la historia, consiguiendo un récord de temporada histórico. Pero no pudieron terminar la temporada como les hubiese gustado.
                 Te invito a seguir esta historia...
             </p>
-        </article>
-        <article class="boton-historia">
             <button type="button" class="btn btn-primary btn-lg"><a href="./historia.html">Ver historia</a></button>
         </article>
     </section>
