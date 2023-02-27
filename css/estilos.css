@@ -1,3 +1,6 @@
+font-family: 'Golos Text', sans-serif;
+
+
 *{padding: 0px;
 margin: 0px;}
 
@@ -6,39 +9,47 @@ margin: 0px;}
 .menu-hamburguesa{
     display: none;
 }
-
-
-.lista{
-    list-style: none;
+.header{
+    background-color: rgb(0, 0, 83);
     display: flex;
-    justify-content: end;
-
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    padding: 5px 20px;
 }
-.lista li{
-    margin: 10px;
-    padding: 10px;
-}
-
 .logo{
     width: 10rem;
     height: 5rem;
+    margin-right: auto;
+    border-radius: 100%;
 }
 .logo img{
     width: 10rem;
     height: 5rem;
+    border-radius: 90px;
 }
-#grid_contenedor{
-    display: grid;
-    grid-template-columns: 10% 90%;
-    background-color: rgb(0, 0, 130);
-    font-family: 'Roboto', sans-serif;
+.header .nav-links{
+    list-style: none;
+    margin: 0px;
+}
+.header .nav-links a{
     font-size: 1.3rem;
-}
-a{
-    text-decoration: none;
-    text-decoration-style: none;
     color: white;
+    text-decoration: none;
+    font-family: 'Golos Text', sans-serif;
 }
+.header li:hover{
+    transform: scale(1.2);
+}
+.header li{
+    display: inline-block;
+    margin: 0 25px;
+}
+.nav-links li a:hover{
+    color: #ffee00;
+    font-family: 'Golos Text', sans-serif;
+}
+
 /* SECCIONES */
 
 .seccion{
@@ -114,24 +125,27 @@ a{
 /* MEDIA QUERIES DEL INDEX, WIDTH 768PX*/
 
 @media screen and (max-width: 768px)  {
-    
-    .logo{
-        width: 10rem;
-        height: 5rem;
-        margin: 0.5rem;
-
-    }
-    .logo img{
-        width: 10rem;
-        height: 5rem;
-    }
-    
-    
-    #grid_contenedor{
+    /* HEADER RESPONSIVE */
+    .header .nav-links a{
         font-size: 1rem;
-        display: flex;
-        justify-content: space-between;
     }
+    .logo{
+        display: none;
+    }
+    .nav-links li a:hover{
+        transform: none;
+        color: white;
+    }
+    .header li:hover{
+        transform: none;
+    }
+    .header{
+        justify-content: center;
+    }
+    .nav-links{
+        padding: 0px 10px;
+    }
+    /* ------------- */
     .secciones{
         grid-template-columns: 2fr 1fr;
         height: 25rem;
@@ -169,28 +183,26 @@ a{
     .texto{
         padding: 1rem;
     }
-    .nav-bar{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
     .lista{
         margin: 0px;
     }
 }
 /* MEDIA QUERIES 320PX MOBILE */
 @media screen and (max-width: 320px){
-    #grid_contenedor{
-        display: none;
-    }
+    
+    
     .menu-hamburguesa{
         display: block;
-        width: 320px;
+        width: auto;
     }
     .navbar{
-        width: 320px;
+        width: auto;
     }
+    /* header */
+.header{
+    display: none;
+}
+    /* -------- */
     .container-fluid img{
         height: 50px;
         width: 100px;
@@ -218,12 +230,13 @@ a{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        width: 100vw;
     }
     .img-contenedor{
         display: none;
     }
 }
-
+/* ------------------------ */
 /* INICIO */
 .h1{
     font-family: 'Bebas Neue', cursive;
@@ -233,13 +246,19 @@ a{
 }
 /* CARD DE INICIO */
 
+.header .nav-links a{
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Golos Text', sans-serif;}
+
 .card-inicio-contenedor{
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    background-color: rgb(207, 207, 207);
     margin: 2.5rem;
     height: 30rem;
     border-radius: 10px;
+    box-shadow: 5px 5px 4px 4px rgb(165, 165, 165);
 }
 .equipo1 p{
     font-family: 'Bebas Neue', cursive;
@@ -286,6 +305,7 @@ a{
     height: 400px;
     padding: 2rem;
     margin: 2rem;
+    background-color: rgb(207,207,207);
 }
 
 .article1{
@@ -297,6 +317,7 @@ a{
     font-family: 'Roboto', sans-serif;
     margin: 40px;
     font-size: 1.5rem;
+    color: black;
 }
 .article1 h2{
     font-family: 'Bebas Neue', cursive;
@@ -318,6 +339,7 @@ a{
     text-align: center;
     padding: 2rem;
     margin: 2rem;
+    background-color: rgb(207,207,207);
 }
  .seccion2 img{
     height: 450px;
@@ -388,15 +410,13 @@ a{
     height: 5rem;
     background-color: darkblue;
     text-align: center;
+    list-style: none;
 }
+
+
 /* ----------------------------- */
 /* MEIDA QUERIES DE INICIO 768PX */
 @media screen and (max-width: 768px){
-    #grid_contenedor{
-        font-size: 1rem;
-        display: flex;
-        justify-content: space-between; 
-    }
     .logo{
         width: 10rem;
         height: 5rem;
@@ -408,8 +428,9 @@ a{
         height: 5rem;
     }
     .card-inicio-contenedor{
-        width: ;
-        margin: 0.5rem;
+        padding: 1rem;
+        height: 300px;
+        margin: 1rem;
         grid-template-columns: 2fr 1fr 2fr;
         border-bottom-style: 100px;
         background-color: rgb(207, 207, 207);
@@ -440,6 +461,25 @@ a{
         padding: 1rem;
         margin: 1rem;
 }
+.texto-klay{
+    padding: 1rem;
+    margin: 1rem;
+}
+.texto-wiggins{
+    margin: 1rem;
+    padding: 1rem;
+}
+.texto-dray{
+    margin: 1rem;
+    padding: 1rem;
+}
+.jugada-semanal{
+    margin: 1rem;
+    padding: 1rem;
+}
+.jugada-semanal p{
+    padding: 1rem;
+}
 /* SECCION 2 */
 .seccion2{
     padding: 1rem;
@@ -468,11 +508,112 @@ a{
 }
 /* MEDIA QUERIES 320PX MOBILE */
 @media screen and (max-width: 320px){
-    #grid_contenedor{
-        display: none;
-    }
-
-
+.h1{
+    padding: 1rem;
+}
+.h1 h1{
+    font-size: 2rem;
+}
+.card-inicio-contenedor{
+    padding: 0rem;
+    margin: 1rem 0rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 0.5fr 0.7fr;
+    height: 100%;
+    box-shadow: none;
+}
+.equipo1 img p{
+    padding: 12px;
+}
+.equipo1 img{
+    width: 8rem;
+    height: 8rem;
+}
+.equipo1 p{
+    font-size: 3rem
+}
+.equipo1{
+    width: 100%;
+    flex-direction: column;
+}
+.datos p{
+    font-size: 1.2rem;
+}
+.datos h2{
+    font-size: 4rem;
+}
+.grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 2rem 0rem;
+    padding: 0rem;
+    width: 300px;
+    height: 100%;
+}
+.article1{
+    margin: 0rem;
+    padding: 0rem;
+    width: 100%;
+}
+.article1 p{
+    margin: 0rem;
+    font-size: 0.8rem;
+    width: 290px;
+}
+.article1 h2{
+    font-size: 2.5rem;
+    margin: 0rem;
+    padding: 0rem;
+}
+.seccion2{
+    margin: 2.5rem 0rem;
+    padding: 0rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.seccion2 img{
+    height: 12rem;
+    width: 15.5rem;
+}
+.texto-klay{
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+.img-klay p{
+    margin: 0rem;
+}
+.img-klay{
+    margin: 0.5rem;
+}
+.game-winner{
+    margin: 0rem;
+    padding: 0rem;
+    margin-top: 5rem;
+}
+.game-winner p{
+    font-size: 1.5rem;
+}
+..game-winner iframe{
+    width: auto;
+    height: auto;
+}
+.texto-wiggins{
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+.jugada-semanal{
+    margin: 0rem;
+    padding: 0rem;
+}
+.jugada-semanal p{
+    padding: 0.5rem;
+}
+.jugada-semanal iframe{
+    height: 250px;
+}
+.titulo-seccion7{
+    padding: 0.5rem;
+}
 }
 
 /* HISTORIA */
@@ -543,7 +684,8 @@ a{
     justify-content: space-around;
     text-align: center;
     height: 15rem;
-    align-items: center; 
+    align-items: center;
+    box-shadow: 0px 5px 5px 0px gray; 
 }
 .card-calendario{
     display: flex;
@@ -558,8 +700,7 @@ a{
 }
 .container-md{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-}
+    font-size: 1.2rem;}
 .nombre-equipo{
     font-style: italic;
 }

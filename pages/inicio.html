@@ -9,6 +9,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&display=swap" rel="stylesheet">    
 <!-- Boostrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 <!-- Link de CSS -->
@@ -18,7 +21,7 @@
     <header class="menu-hamburguesa">
         <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-              <img src="../image/logo-Golden-State-Warriors.png" alt="">
+              <img src="../image/logo.png" alt="">
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -33,32 +36,35 @@
                       <a class="nav-link active" aria-current="page" href="./index.html">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="./pages/inicio.html">Inicio</a>
+                      <a class="nav-link" href="./inicio.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/calendario.html">Calendario</a>
+                        <a class="nav-link" href="./calendario.html">Calendario</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="./pages/historia.html">Historia</a>
+                        <a class="nav-link" href="./jugadores.html">Jugadores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./historia.html">Historia</a>
                       </li>
                 </div>
               </div>
             </div>
           </nav>
     </header>
-    <header id="grid_contenedor">
+    <header class="header">
         <div class="logo">
-            <img src="../image/logo-Golden-State-Warriors.png" alt="logo" id="logo_header">
+            <img src="../image/logo.png" alt="logo">
         </div>
-        <div class="nav-bar">
-            <ul class="lista">
+        <nav>
+            <ul class="nav-links">
                 <li><a href="../index.html">Sobre nosotros</a></li>
-                <li><a href="./inicio.html">Inicio</a></li>
+                <li><a href="./pages/inicio.html">Inicio</a></li>
                 <li><a href="./calendario.html">Calendario</a></li>
-                <li><a href="./jugadores.html">Jugadores</a></li>
                 <li><a href="./historia.html">Historia</a></li>
+                <li><a href="./jugadores.html">Jugadores</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
     <!-- CARD DE INICIO -->
     <main>
@@ -116,12 +122,12 @@
     <!-- ------------------------- -->
     <!-- SECCION 4 -->
     <section class="seccion2">
-        <article>
+        <article class="texto-wiggins">
             <p>Se informa que Andrew Wiggins será cuestionable para el partido de esta noche debido a una enfermedad (no es covid), es probable que sea baja</p>
         </article>
-        <article class="texto-wiggins">
+        <article class="img-wiggins">
             <img src="../image/wiggins.jpg" alt="wiggins">
-            <p>00/00/00</p>
+            <p>20/01/23</p>
         </article>
     </section>
     <!-- ------------------------- -->
@@ -129,7 +135,7 @@
     <section class="seccion2">
         <article>
             <img src="../image/draymond green.jpg" alt="draymond">
-            <p>00/00/00</p>
+            <p>17/01/23</p>
         </article>
         <article class="texto-dray">
             <p>Draymond Green sobre enfrentarse a los Memphis Grizzlies:"No voy a mentirles y a decir que es un partido más. Es divertido jugar contra ellos y es un partido importante... Pero creo que aún no lograron lo suficiente para considerarse nuestro rivales. No es una rivalidad. Pero será un gran partido</p>
