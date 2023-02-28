@@ -187,13 +187,14 @@ margin: 0px;}
         margin: 0px;
     }
 }
-/* MEDIA QUERIES 320PX MOBILE */
-@media screen and (max-width: 320px){
+/* MEDIA QUERIES 368PX MOBILE */
+@media screen and (max-width: 368px){
     
     
     .menu-hamburguesa{
         display: block;
         width: auto;
+        height: 70px;
     }
     .navbar{
         width: auto;
@@ -506,8 +507,15 @@ margin: 0px;}
     height: 3rem;
 }
 }
-/* MEDIA QUERIES 320PX MOBILE */
-@media screen and (max-width: 320px){
+/* MEDIA QUERIES 368PX MOBILE */
+@media screen and (max-width: 368px){
+.header{
+    display: none;
+}
+.menu-hamburguesa{
+    display: block;
+}
+
 .h1{
     padding: 1rem;
 }
@@ -545,10 +553,18 @@ margin: 0px;}
 .grid{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    margin: 2rem 0rem;
+    margin: 0rem;
     padding: 0rem;
-    width: 300px;
+    width: 100%;
     height: 100%;
+    text-align: center;
+}
+.article1 iframe{
+    width: 15rem;
+}
+.video{
+    width: 300px;
+    margin-left: 35px;
 }
 .article1{
     margin: 0rem;
@@ -557,8 +573,8 @@ margin: 0px;}
 }
 .article1 p{
     margin: 0rem;
-    font-size: 0.8rem;
-    width: 290px;
+    font-size: 1.2rem;
+    width: 100%;
 }
 .article1 h2{
     font-size: 2.5rem;
@@ -573,11 +589,14 @@ margin: 0px;}
 }
 .seccion2 img{
     height: 12rem;
-    width: 15.5rem;
+    width: 19.5rem;
 }
 .texto-klay{
     padding: 0.5rem;
     margin: 0.5rem;
+}
+.texto-klay p{
+    font-size: 1.2rem;
 }
 .img-klay p{
     margin: 0rem;
@@ -591,7 +610,7 @@ margin: 0px;}
     margin-top: 5rem;
 }
 .game-winner p{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 ..game-winner iframe{
     width: auto;
@@ -600,6 +619,12 @@ margin: 0px;}
 .texto-wiggins{
     padding: 0.5rem;
     margin: 0.5rem;
+}
+.texto-wiggins p{
+    font-size: 1.2rem;
+}
+.texto-dray p{
+    font-size: 1.2rem;
 }
 .jugada-semanal{
     margin: 0rem;
@@ -613,6 +638,9 @@ margin: 0px;}
 }
 .titulo-seccion7{
     padding: 0.5rem;
+}
+.titulo-seccion7 p{
+    font-size: 1.2rem;
 }
 }
 
