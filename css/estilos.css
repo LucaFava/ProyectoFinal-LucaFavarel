@@ -10,12 +10,14 @@ margin: 0px;}
     display: none;
 }
 .header{
-    background-color: rgb(0, 0, 83);
+    /* background-color: rgb(0, 0, 83); */
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 100px;
     padding: 5px 20px;
+    background: rgb(2,0,36);
+background: linear-gradient(344deg, rgba(2,0,36,1) 0%, rgba(0,3,111,1) 31%, rgba(39,34,94,1) 52%, rgba(116,96,60,1) 67%, rgba(182,150,32,1) 85%, rgba(255,210,0,1) 100%);
 }
 .logo{
     width: 10rem;
@@ -211,6 +213,7 @@ margin: 0px;}
     
     .seccion{
         width: 100%;
+        height: auto;
     }
     .seccion p{
         font-size: 1rem;
@@ -706,39 +709,60 @@ margin: 0px;}
     height:  55rem;
 }
 /* CALENDARIO */
-.col{
-    /* background-color: */
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    height: 15rem;
-    align-items: center;
-    box-shadow: 0px 5px 5px 0px gray; 
+
+.grid-calendario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
 }
-.card-calendario{
+.contenedor-card img{
+    height: 7rem;
+    width: 12.5rem;
+    padding: 0.5;
+}
+.contenedor-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* background-image: linear-gradient(#00036F, #FFD200); */
+    text-align: center;
+    border-radius: 10px;
+    margin: 1.5rem;
+    height: 15rem;
+}
+.datos-calendario{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
-.col img{
-    height: 5rem;
-    width: 150px;
+.team{
+    margin: 1rem;
 }
-.row{
-    row-gap: 1rem;
-}
-.container-md{
+.contenedor-card p{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;}
-.nombre-equipo{
-    font-style: italic;
+    font-size: 1rem;
 }
-.titulo-calendario h1{
-    font-family: 'Bebas Neue', cursive;
+
+.datos-calendario :nth-child(2){
     font-size: 3rem;
+    font-family: 'Bebas Neue', cursive;
 }
-.titulo-calendario{
+.datos-calendario p{
+    font-size: 1.5rem;
+}
+.team :nth-child(2){
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+.titulo-contenedor-calendario{
     text-align: center;
-    margin: 2rem;
-    padding: 2rem;
+    margin: 4rem;
+    font-family: 'Bebas Neue', cursive;
 }
+.titulo-contenedor-calendario h1{
+    font-size: 4rem;
+}
+
+
 
