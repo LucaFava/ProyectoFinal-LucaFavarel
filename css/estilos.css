@@ -615,7 +615,7 @@ background: linear-gradient(344deg, rgba(2,0,36,1) 0%, rgba(0,3,111,1) 31%, rgba
 .game-winner p{
     font-size: 1.8rem;
 }
-..game-winner iframe{
+.game-winner iframe{
     width: auto;
     height: auto;
 }
