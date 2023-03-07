@@ -675,6 +675,7 @@ background: linear-gradient(344deg, rgba(2,0,36,1) 0%, rgba(0,3,111,1) 31%, rgba
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 0.5rem;
     height: 500px;
+    margin: 0.5rem;
 }
 .card{
     width: 100%;
@@ -763,6 +764,3 @@ background: linear-gradient(344deg, rgba(2,0,36,1) 0%, rgba(0,3,111,1) 31%, rgba
 .titulo-contenedor-calendario h1{
     font-size: 4rem;
 }
-
-
-
