@@ -291,7 +291,7 @@
 }
 .grid .article1 h2 {
   font-family: "Bebas Neue", cursive;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 .grid .video {
   display: flex;
@@ -359,7 +359,8 @@
 }
 .jugada-semanal h2 {
   font-family: "Bebas Neue", cursive;
-  font-size: 3rem;
+  font-size: 5rem;
+  margin-top: 2rem;
 }
 .jugada-semanal iframe {
   width: 90%;
@@ -370,18 +371,57 @@
 }
 .titulo-seccion7 h2 {
   font-family: "Bebas Neue", cursive;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
-.boton-historia {
-  padding: 2rem;
-}
-.boton-historia .btn {
+.boton {
+  margin-top: 2rem;
   width: 15rem;
   height: 5rem;
-  background-color: darkblue;
+  border-radius: 10rem;
   text-align: center;
-  list-style: none;
+}
+.boton img {
+  width: 24px;
+  height: 24;
+}
+
+.historia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+  background: white;
+}
+.historia img {
+  height: 450px;
+  width: 700px;
+  border-radius: 10px;
+}
+.historia h2 {
+  color: black;
+}
+.historia p {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+.historia .boton {
+  background: linear-gradient(344deg, rgb(2, 0, 36) 0%, rgb(0, 3, 111) 31%, rgb(39, 34, 94) 52%, rgb(116, 96, 60) 67%, rgb(182, 150, 32) 85%, rgb(255, 210, 0) 100%);
+  border: 0px;
+}
+.historia .boton:hover {
+  transform: scale(1.2);
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.5);
+  transition: all 1s;
+}
+.historia .boton a {
+  color: white;
+  text-decoration: none;
+  font-family: "Golos Text", sans-serif;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {
