@@ -1,0 +1,218 @@
+// HEADER
+.menu-hamburguesa{
+    display: none;
+}
+.header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    padding: 5px 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(344deg, rgba(2,0,36,1) 0%, rgba(0,3,111,1) 31%, rgba(39,34,94,1) 52%, rgba(116,96,60,1) 67%, rgba(182,150,32,1) 85%, rgba(255,210,0,1) 100%);
+    .nav-links{
+        list-style: none;
+        margin: 0px;
+        a{
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+            font-family: 'Golos Text', sans-serif;
+            &:hover{
+                color: #ffee00;
+            }
+        }
+        li{
+            display: inline-block;
+            margin: 0 25px;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+// LOGO
+.logo{
+    width: 10rem;
+    height: 5rem;
+    margin-right: auto;
+    border-radius: 100%
+}
+.logo img{
+    width: 10rem;
+    height: 5rem;
+    border-radius: 90px;
+}
+// SECCIONES
+.seccion{
+    width: 100%;
+    height: 100vh;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    margin: 2rem;
+    padding: 2rem;
+    h1{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 10rem
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 2rem;
+        margin-right: 2rem; 
+    }
+}
+.conector{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    margin-left: 2rem;
+}
+// SECCIONES
+.secciones{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;  
+    align-items: center;
+}
+.img-contenedor{
+    width: 768px;
+    height: 528px;
+    margin: 1.5rem;
+    img{
+        width: 48rem;
+        height: 33rem;
+        border-radius: 30px;
+    }
+}
+.texto{
+    width: 50rem;
+    font-size: 1.8rem;
+    padding: 4rem;
+    text-align: center;
+    p{
+        font-family: 'Roboto', sans-serif;
+    }
+    h2{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 5rem;
+    }
+}
+// MEDIA QUERIES DEL INDEX, WIDTH 768PX
+@media screen and (max-width: 768px){
+    .header{
+        justify-content: center;
+        .nav-links{
+            padding: 0px 10px;
+            li{
+                margin: 0px 12px;
+                &:hover{
+                    transform: none;
+                }
+                a{
+                    &:hover{
+                       transform: none;
+                       color: white;
+                    }
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    // secciones
+    .secciones{
+        grid-template-columns: 2fr 1fr;
+        height: 25rem;
+    }
+    .titulo{
+        padding: 1.5rem;
+        margin: 1.5rem;
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.5rem;
+            padding: 1rem;
+            margin: 1rem;
+        }
+    }
+    .conector{
+        font-size: 1.7rem
+    }
+    .img-contenedor{
+        height: 20rem;
+        width: 20rem;
+        img{
+            height: 15rem;
+            width: 20rem;
+            border-radius: 5px;
+        }
+    }
+    .texto{
+        padding: 1rem;
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+    }
+    .lista{
+        margin: 0px;
+    }
+}
+// MEDIA QUERIES 368PX MOBILE
+@media screen and (max-width: 368px){
+.menu-hamburguesa{
+    display: block;
+    width: auto;
+    height: 70px;
+}
+.navbar{
+    width: auto;
+}
+.header{
+    display: none;
+}
+.container-fluid img{
+    height: 50px;
+    width: 100px;
+}
+.seccion{
+    width: 100%;
+    height: auto;
+    p{
+        font-size: 1rem;
+    }
+}
+.titulo{
+    width: 100%;
+    padding: 0rem;
+    margin: 0.5rem;}
+    p{
+        padding: 0rem;
+    }
+
+.secciones{
+    grid-template-columns: 0fr;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    img{
+        display: none;
+    }
+}
+.img-contenedor{
+    display: none;
+}
+}
+// --------------------
