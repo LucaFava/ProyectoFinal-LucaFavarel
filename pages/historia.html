@@ -14,6 +14,8 @@
             <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&display=swap" rel="stylesheet">    
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Link de CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
@@ -33,51 +35,72 @@
     </nav>
 </header>
     <main>
-        <section class="seccion-historia">
-            <article>
+        <section id="seccion-historia">
+            <article class="titulo-historico">
                 <h1>Golden State Warriors</h1>
-                <p>Los Golden State Warriors, son un equipo profesional de baloncesto de los Estados Unidos con sede en San Francisco California. Compiten en la División Pacífico de la Conferencia Oeste de la National Basketball Association (NBA) y disputan sus partidos locales en el Chase Center, ubicado en el barrio sanfrancisco de Mission Bay</p>
             </article>
-            <article>
-                <img src="../image/chase center.jpg"alt="">
+            <article class="texto-historico">
+              <p>El equipo fue fundado en <b>Philadelfia</b> en 1946 con el nombre de <b>Philadelphia Warriors</b> como miembro de la Basketball Association of America (BAA). A principios de la década de 1960 se mudaron al área de la Bahía de San Francisco, donde primero adoptaron el nombre de San Francisco Warriors y en 1971, el nombre con el que se los conoce en la actualidad.</p>
+              <img src="../image/chamberlain warriors phila.jpeg" alt="chamberlain">
+            </article>
+            <article class="texto-historico">
+              <img src="../image/chase center.jpg" alt="chase Center">
+                <p>Actualmente los <b>Golden State Warriors</b>, son un equipo profesional de baloncesto de los Estados Unidos con sede en San Francisco California. Compiten en la División Pacífico de la Conferencia Oeste de la National Basketball Association (NBA) y disputan sus partidos locales en el <b>Chase Center</b>, ubicado en el barrio sanfrancisco de Mission Bay. <b>Esta franquicia es una de las tres originales que existen en la actualidad</b>, a lo largo de su historia ganaron 7 campeonatos, siendo asi el tercer equipo mejor laureado, 7 titulos de Conferencia y 12 titulos divisionales. Además poseen el mejor record en temporada regular de todos los tiempos (73-9 en 2015-16), y también mejor registro en Playoff (16-1 en 2017).</p>
             </article>
         </section>
         <section class="titulo-eras">
-            <article>
-                <h2>Eras</h2>
-            </article>
+          <article>
+            <h2>Eras</h2>
+          </article>
         </section>
-        <section>
-            <article class="grid-eras">
-                <div class="card">
-                    <img src="../image/wilt chamberlain warriors.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h3 class="card-title">Philadelfia Warriors (1946-1962)</h3>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="../image/rick barry.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h3 class="card-title">Rick Barry (1971-1978)</h3>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="../image/tmc.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h3 class="card-title">Run T.M.C (1987-1997)</h3>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="../image/era curyy.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h3 class="card-title">Stephen Curry (2009-Presente)</h3>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                  </div>
-            </article>
+
+        <section class="seccion-eras">
+          <article class="card">
+            <div class="frente">
+              <img src="../image/wilt chamberlain.jpeg" alt="Era Wilt Chamberlain">
+              <h2>Los Philadelphia Warriors (1946-1962)</h2>
+            </div>
+            <div class="dorso">
+              <h2>Los Philadelphia warriors</h2>
+              <p>Liderados por el gran anotador Joe Fulks, los Warriors ganaron el campeonato inaugural de la BAA. Luego en la temporada 1955-56 ganaron su otro campeonato. En el draft de 1959 los Warriors eligieron al pivot <b>Wilt Chamberlain ("Wilt the Stilt")</b> jugador historico que romperia incontables récords. El 2 de marzo de 1962 Wilt fue capaz de anotar <b>100 puntos</b> hecho totalmente historico,que, hasta el dia de hoy nadie fue capaz de romper.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="frente">
+              <img src="../image/rick barry.jpg" alt=" Era Rick Barry">
+              <h2>Primera etapa en San Francisco (1962-1971)</h2>
+            </div>
+            <div class="dorso">
+              <h2>San Francisco</h2>
+              <p>En el año 1962, la franquicia se traslado a la Bahía de San Francisco , <b>renombrandose San Francisco Warriors</b>. En la campaña 1963-64 los Warriors ganaron el título de División y cayeron en las finales ante los Celtics. En el draft de 1965, los Warriors eligieron a <b>Rick Barry, que fue galardonado como Rookie del año</b>, y en el 67 lideró al equipo en las finales, que otra vez perdió contra los 76ers. En el 68 barry abandona la franquicia por problemas relacionados con el dinero, tras luego de varias temporadas en el ABA regresó en el 71. </p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="frente">
+              <img src="../image/tmc 2.jpg" alt=" Era Run TMC">
+              <h2>Run T-M-C (1987-1997)</h2>
+            </div>
+            <div class="dorso">
+              <h2>T-M-C</h2>
+              <p>Tras una mala etapa a finales de los 70 y principios de los 80, los Warriors volvieron a la senda del éxito a finales de los 80.
+                El equipo estaba liderado por el tridente formado por <b>Tim Hardaway, Mitch Richmond y Chris Mullin, este grupo era nombrado Run T-M-C</b>. Este grupo solo duró 2 temporadas, ya que Mitch fue traspasado. En la temporada 1993-94 Crhis Webber fue nombrado Rookie del año, y junto al joven Latrell Sprewell, Mullin y Hardaway llevaron a los Warriors a Playoff.
+                Al comienzo de las temporada 1994-95 un enfrentamiento entre Latrell y Webber, complico al equipo, años más tardes estos jugadores se irian del equipo.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="frente">
+              <img src="../image/era curyy.jpg" alt=" Era Curry">
+              <h2>Run T-M-C (1987-1997)</h2>
+            </div>
+            <div class="dorso">
+              <h2>Stephen Curry</h2>
+              <p>Para la temporada 2009-10, los Warriors escogieron en el draft a Davidson Stephen Curry como septima elección, sin saber lo que iba a significar este joven Curry, aqui comienza la dinastia de Curry.
+                en el draft de 2011, escogieron a Klay Thompson, más adelante serian los Splash Brothers junto a Curry, en el 2013 escogieron a Harrison Barnes, en 2014-15 contrataron a Steve Kerr (ex jugador de Chicago), ese año el equipo terminó con un récord de 67-15, esa temporada se consagrarón campeones , Curry se galardono MVP de la temporada, y Andre Iguodala como MVP de las finales.
+                la temporada 2015-16 fue historica, terminaron la serie con un récord de 73-9 siendo en esa temporada el mejor equipo de la historia, increiblemente perdieron esas finales. Esta era es la más ganadora de la franquicia.
+              </p>
+            </div>
+          </article>
         </section>
         <!-- TITULOS -->
         <section class="titulo-eras">
@@ -158,6 +181,8 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+
+        
     </main>
 
 
@@ -167,5 +192,10 @@
 
     <!-- scrip boostrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<!-- Animaciones AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

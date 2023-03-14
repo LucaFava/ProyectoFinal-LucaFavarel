@@ -1,559 +1,559 @@
-font-family: 'Golos Text', sans-serif;
-
-
-*{padding: 0px;
-margin: 0px;}
-
-
-/* HEADER */
-.menu-hamburguesa{
-    display: none;
-}
-.header{
-    /* background-color: rgb(0, 0, 83); */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100px;
-    padding: 5px 20px;
-    background: rgb(2,0,36);
-background: linear-gradient(344deg, rgba(2,0,36,1) 0%, rgba(0,3,111,1) 31%, rgba(39,34,94,1) 52%, rgba(116,96,60,1) 67%, rgba(182,150,32,1) 85%, rgba(255,210,0,1) 100%);
-}
-.logo{
-    width: 10rem;
-    height: 5rem;
-    margin-right: auto;
-    border-radius: 100%;
-}
-.logo img{
-    width: 10rem;
-    height: 5rem;
-    border-radius: 90px;
-}
-.header .nav-links{
-    list-style: none;
-    margin: 0px;
-}
-.header .nav-links a{
-    font-size: 1.3rem;
-    color: white;
-    text-decoration: none;
-    font-family: 'Golos Text', sans-serif;
-}
-.header li:hover{
-    transform: scale(1.2);
-}
-.header li{
-    display: inline-block;
-    margin: 0 25px;
-}
-.nav-links li a:hover{
-    color: #ffee00;
-    font-family: 'Golos Text', sans-serif;
+.menu-hamburguesa {
+  display: none;
 }
 
-/* SECCIONES */
-
-.seccion{
-    width: 100%;
-    height: 100vh;
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
+  padding: 5px 20px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(344deg, rgb(2, 0, 36) 0%, rgb(0, 3, 111) 31%, rgb(39, 34, 94) 52%, rgb(116, 96, 60) 67%, rgb(182, 150, 32) 85%, rgb(255, 210, 0) 100%);
+}
+.header .nav-links {
+  list-style: none;
+  margin: 0px;
+}
+.header .nav-links a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  font-family: "Golos Text", sans-serif;
+}
+.header .nav-links a:hover {
+  color: #ffee00;
+}
+.header .nav-links li {
+  display: inline-block;
+  margin: 0 25px;
+}
+.header .nav-links li:hover {
+  transform: scale(1.2);
 }
 
-.titulo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.logo {
+  width: 10rem;
+  height: 5rem;
+  margin-right: auto;
+  border-radius: 100%;
+}
+
+.logo img {
+  width: 10rem;
+  height: 5rem;
+  border-radius: 90px;
+}
+
+.seccion {
+  width: 100%;
+  height: 100vh;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  margin: 2rem;
+  padding: 2rem;
+}
+.titulo h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 10rem;
+}
+.titulo p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.conector {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  margin-left: 2rem;
+}
+
+.secciones {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-items: center;
+}
+
+.img-contenedor {
+  width: 768px;
+  height: 528px;
+  margin: 1.5rem;
+}
+.img-contenedor img {
+  width: 48rem;
+  height: 33rem;
+  border-radius: 30px;
+}
+
+.texto {
+  width: 50rem;
+  font-size: 1.8rem;
+  padding: 4rem;
+  text-align: center;
+}
+.texto p {
+  font-family: "Roboto", sans-serif;
+}
+.texto h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
     justify-content: center;
-    height: 70%;
-    margin: 2rem;
-    padding: 2rem;
-}
-.titulo h1{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 10rem;
-}
-.titulo p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-.conector{
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    font-style: italic;
-    margin-left: 2rem;
-}
-
-/* SECCION 2 */
-.secciones{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    display: flex;  
-    align-items: center;
-    
-}
-.img-contenedor{
-    width: 768px;
-    height: 528px;
+  }
+  .header .nav-links {
+    padding: 0px 10px;
+  }
+  .header .nav-links li {
+    margin: 0px 12px;
+  }
+  .header .nav-links li:hover {
+    transform: none;
+  }
+  .header .nav-links li a {
+    font-size: 1rem;
+  }
+  .header .nav-links li a:hover {
+    transform: none;
+    color: white;
+  }
+  .secciones {
+    grid-template-columns: 2fr 1fr;
+    height: 25rem;
+  }
+  .titulo {
+    padding: 1.5rem;
     margin: 1.5rem;
-}
-.img{
-    width: 768px;
-    height: 528px;
-    border-radius: 30px;
-}
-.texto{
-    font-family: 'Bebas Neue', cursive;
-    display: flex;
-    flex-direction: column;
-    align-items: center;;
-    font-size: 2rem;
-    padding: 5rem;
-    text-align: center;
-}
-.texto p{
-    font-family: 'Roboto', sans-serif;
-    padding: 2rem;
-}
-
-.texto h2{
-    font-size: 5rem;
-}
-
-/* MEDIA QUERIES DEL INDEX, WIDTH 768PX*/
-
-@media screen and (max-width: 768px)  {
-    /* HEADER RESPONSIVE */
-    .header .nav-links a{
-        font-size: 1rem;
-    }
-    .logo{
-        display: none;
-    }
-    .nav-links li a:hover{
-        transform: none;
-        color: white;
-    }
-    .header li:hover{
-        transform: none;
-    }
-    .header{
-        justify-content: center;
-    }
-    .nav-links{
-        padding: 0px 10px;
-    }
-    /* ------------- */
-    .secciones{
-        grid-template-columns: 2fr 1fr;
-        height: 25rem;
-    }
-    .titulo{
-        padding: 1.5rem;
-        margin: 1.5rem;
-    }
-    .titulo h1{
-        font-size: 3rem;
-    }
-    .titulo p{
-        font-size: 1.5rem;
-        padding: 1rem;
-        margin: 1rem;
-    }
-    .conector{
-        font-size: 1.7rem;
-    }
-    .img-contenedor{
-        height: 20rem;
-        width: 20rem;
-    }
-    .img{
-        height: 15rem;
-        width: 20rem;
-        border-radius: 5px;
-    }
-    .texto h2{
-        font-size: 3rem;
-    }
-    .texto p{
-        font-size: 1.2rem;
-    }
-    .texto{
-        padding: 1rem;
-    }
-    .lista{
-        margin: 0px;
-    }
-}
-/* MEDIA QUERIES 368PX MOBILE */
-@media screen and (max-width: 368px){
-    
-    
-    .menu-hamburguesa{
-        display: block;
-        width: auto;
-        height: 70px;
-    }
-    .navbar{
-        width: auto;
-    }
-    /* header */
-.header{
-    display: none;
-}
-    /* -------- */
-    .container-fluid img{
-        height: 50px;
-        width: 100px;
-    }
-    
-    .seccion{
-        width: 100%;
-        height: auto;
-    }
-    .seccion p{
-        font-size: 1rem;
-    }
-    .titulo{
-        width: 100%;
-        padding: 0rem;
-        margin: 0.5rem;
-    }
-    .titulo p{
-        padding: 0rem;
-    }
-    .secciones img{
-        display: none;
-    }
-    .secciones{
-        grid-template-columns: 0fr;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100vw;
-    }
-    .img-contenedor{
-        display: none;
-    }
-}
-/* ------------------------ */
-/* INICIO */
-.h1{
-    font-family: 'Bebas Neue', cursive;
-}
-.h1 h1{
-    font-size: 4rem;
-}
-/* CARD DE INICIO */
-
-.header .nav-links a{
-    font-size: 1.3rem;
-    color: white;
-    text-decoration: none;
-    font-family: 'Golos Text', sans-serif;}
-
-.card-inicio-contenedor{
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    margin: 2.5rem;
-    height: 30rem;
-    border-radius: 10px;
-    box-shadow: 5px 5px 4px 4px rgb(165, 165, 165);
-}
-.equipo1 p{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 5rem;
-}
-.equipo1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.equipo1 img{
-    width: 22rem;
-    height: 20.5rem;
-    padding: 2rem;
-}
-.datos{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-.datos h2{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 5rem;
-}
-.datos p{
-    font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
-}
-
-.h1{
-    display: flex;
-    justify-content: center;
-    padding: 3rem;
-}
-/* ------------------------------- */
-/* SECCION 1 */
-
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    height: 400px;
-    padding: 2rem;
-    margin: 2rem;
-    background-color: rgb(207,207,207);
-}
-
-.article1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.article1 p{
-    font-family: 'Roboto', sans-serif;
-    margin: 40px;
-    font-size: 1.5rem;
-    color: black;
-}
-.article1 h2{
-    font-family: 'Bebas Neue', cursive;
+  }
+  .titulo h1 {
     font-size: 3rem;
-}
-.video{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    padding-left: 10rem;
-}
-/* --------------- */
-/* SECCION 2 */
-.seccion2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-    margin: 2rem;
-    background-color: rgb(207,207,207);
-}
- .seccion2 img{
-    height: 450px;
-    width: 700px;
-    border-radius: 10px;
- }
-
-.texto-klay{
-    margin: 2rem;
-    padding: 2rem;
-    font-family: 'Roboto', sans-serif;
+  }
+  .titulo p {
     font-size: 1.5rem;
-}
-/* ------------------ */
-/* SECCION 3 */
-.game-winner{
-    display: grid;
-    grid-template-rows: 1fr;
-    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .conector {
     font-size: 1.7rem;
-    padding: 2rem;
-    margin: 2rem;
+  }
+  .img-contenedor {
+    height: 20rem;
+    width: 20rem;
+  }
+  .img-contenedor img {
+    height: 15rem;
+    width: 20rem;
+    border-radius: 5px;
+  }
+  .texto {
+    padding: 1rem;
+  }
+  .texto h2 {
+    font-size: 3rem;
+  }
+  .texto p {
+    font-size: 1.2rem;
+  }
+  .lista {
+    margin: 0px;
+  }
 }
-.seccion2 p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+@media screen and (max-width: 368px) {
+  .menu-hamburguesa {
+    display: block;
+    width: auto;
+    height: 70px;
+  }
+  .navbar {
+    width: auto;
+  }
+  .header {
+    display: none;
+  }
+  .container-fluid img {
+    height: 50px;
+    width: 100px;
+  }
+  .seccion {
+    width: 100%;
+    height: auto;
+  }
+  .seccion p {
+    font-size: 1rem;
+  }
+  .titulo {
+    width: 100%;
+    padding: 0rem;
+    margin: 0.5rem;
+  }
+  p {
+    padding: 0rem;
+  }
+  .secciones {
+    grid-template-columns: 0fr;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .secciones img {
+    display: none;
+  }
+  .img-contenedor {
+    display: none;
+  }
 }
-/* ------------------------- */
+.h1 {
+  font-family: "Bebas Neue", cursive;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+.h1 h1 {
+  font-size: 4rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+.card-inicio-contenedor {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  margin: 2.5rem;
+  height: 30rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 4px 4px rgb(165, 165, 165);
+}
+
+.equipo1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.equipo1 img {
+  width: 22rem;
+  height: 20.5rem;
+  padding: 2rem;
+}
+.equipo1 p {
+  font-family: "Bebas Neue", cursive;
+  font-size: 5rem;
+}
+
+.datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.datos h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 5rem;
+}
+.datos p {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  height: 400px;
+  padding: 2rem;
+  margin: 2rem;
+  background-color: rgb(207, 207, 207);
+}
+.grid .article1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.grid .article1 p {
+  font-family: "Roboto", sans-serif;
+  margin: 40px;
+  font-size: 1.5rem;
+  color: black;
+}
+.grid .article1 h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 5rem;
+}
+.grid .video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-left: 10rem;
+}
+
+.seccion2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+  background-color: rgb(207, 207, 207);
+}
+.seccion2 img {
+  height: 450px;
+  width: 700px;
+  border-radius: 10px;
+}
+.seccion2 .texto-klay {
+  margin: 2rem;
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+.seccion2 p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.game-winner {
+  display: grid;
+  grid-template-rows: 1fr;
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 2rem;
+  margin: 2rem;
+}
+
 /* SECCION 4 reutiliza css de seccion 2 */
-.texto-wiggins{
-    margin: 2rem;
-    padding: 2rem;
+.texto-wiggins {
+  margin: 2rem;
+  padding: 2rem;
 }
+
 /* SECCION 5      "        "        "  */
-.texto-dray{
-    margin: 2rem;
-    padding: 2rem;
+.texto-dray {
+  margin: 2rem;
+  padding: 2rem;
 }
-/* SECCION 6 */
-.jugada-semanal{
-    display: grid;
-    grid-template-rows: 1fr;
-    text-align: center;
+
+.jugada-semanal {
+  display: grid;
+  grid-template-rows: 1fr;
+  text-align: center;
 }
-.jugada-semanal p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    padding: 2rem;
+.jugada-semanal p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  padding: 2rem;
 }
-.jugada-semanal h2{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 3rem;
+.jugada-semanal h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 5rem;
+  margin-top: 2rem;
 }
-/* ---------------------- */
-/* SECCION 7 */
-.titulo-seccion7 h2{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 3rem;
+.jugada-semanal iframe {
+  width: 90%;
 }
-.titulo-seccion7{
-    padding: 2rem;
+
+.titulo-seccion7 {
+  padding: 2rem;
 }
-.boton-historia{
-    padding: 2rem;
+.titulo-seccion7 h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 5rem;
 }
-.btn{
-    width: 15rem;
+
+.boton {
+  margin-top: 2rem;
+  width: 15rem;
+  height: 5rem;
+  border-radius: 10rem;
+  text-align: center;
+}
+.boton img {
+  width: 24px;
+  height: 24;
+}
+
+.historia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+  background: white;
+}
+.historia img {
+  height: 450px;
+  width: 700px;
+  border-radius: 10px;
+}
+.historia h2 {
+  color: black;
+}
+.historia p {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+.historia .boton {
+  background: linear-gradient(344deg, rgb(2, 0, 36) 0%, rgb(0, 3, 111) 31%, rgb(39, 34, 94) 52%, rgb(116, 96, 60) 67%, rgb(182, 150, 32) 85%, rgb(255, 210, 0) 100%);
+  border: 0px;
+}
+.historia .boton:hover {
+  transform: scale(1.2);
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.5);
+  transition: all 1s;
+}
+.historia .boton a {
+  color: white;
+  text-decoration: none;
+  font-family: "Golos Text", sans-serif;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 10rem;
     height: 5rem;
-    background-color: darkblue;
-    text-align: center;
-    list-style: none;
-}
-
-
-/* ----------------------------- */
-/* MEIDA QUERIES DE INICIO 768PX */
-@media screen and (max-width: 768px){
-    .logo{
-        width: 10rem;
-        height: 5rem;
-        margin: 0.5rem;
-
-    }
-    .logo img{
-        width: 10rem;
-        height: 5rem;
-    }
-    .card-inicio-contenedor{
-        padding: 1rem;
-        height: 300px;
-        margin: 1rem;
-        grid-template-columns: 2fr 1fr 2fr;
-        border-bottom-style: 100px;
-        background-color: rgb(207, 207, 207);
-    }
-    .equipo1{
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    .equipo1 img{
-        width: 200px;
-        height: 200px;
-    }
-    .equipo1 p{
-        font-size: 3rem;
-    }
-    .article1 p{
-        font-size: 1rem;
-    }
-    .video{
-        padding: 0rem;
-    }
-    .video iframe{
-        width: 300px;
-    }
-    .grid{
-        padding: 1rem;
-        margin: 1rem;
-}
-.texto-klay{
+    margin: 0.5rem;
+  }
+  .logo img {
+    width: 10rem;
+    height: 5rem;
+  }
+  .card-inicio-contenedor {
+    padding: 1rem;
+    height: 300px;
+    margin: 1rem;
+    grid-template-columns: 2fr 1fr 2fr;
+    border-bottom-style: 100px;
+    background-color: rgb(207, 207, 207);
+  }
+  .card-inicio-contenedor .equipo1 {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-inicio-contenedor .equipo1 img {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+  .card-inicio-contenedor .equipo1 p {
+    font-size: 3rem;
+  }
+  .video {
+    padding: 0rem;
+  }
+  .video iframe {
+    width: 300px;
+  }
+  .grid {
     padding: 1rem;
     margin: 1rem;
-}
-.texto-wiggins{
-    margin: 1rem;
-    padding: 1rem;
-}
-.texto-dray{
-    margin: 1rem;
-    padding: 1rem;
-}
-.jugada-semanal{
-    margin: 1rem;
-    padding: 1rem;
-}
-.jugada-semanal p{
-    padding: 1rem;
-}
-/* SECCION 2 */
-.seccion2{
+  }
+  .grid .article1 {
+    margin-left: 2rem;
+  }
+  .grid .article1 p {
+    font-size: 0.9rem;
+    margin: 0rem;
+  }
+  .texto-klay {
     padding: 1rem;
     margin: 1rem;
-}
-.seccion2 img{
+  }
+  .texto-wiggins {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .texto-dray {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .jugada-semanal {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .jugada-semanal p {
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+  .jugada-semanal h2 {
+    font-size: 2.5rem;
+  }
+  .seccion2 {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .seccion2 img {
     width: 400px;
     height: 250px;
-}
-.seccion2 p{
+  }
+  .seccion2 p {
     font-size: 0.9rem;
-}
-.jugada-semanal h2{
-    font-size: 2.5rem;
-}
-.jugada-semanal p{
-    font-size: 1.3rem;
-}
-.boton-historia{
+  }
+  .boton-historia {
     padding: 1rem;
+  }
 }
-.btn{
-    width: 10rem;
-    height: 3rem;
-}
-}
-/* MEDIA QUERIES 368PX MOBILE */
-@media screen and (max-width: 368px){
-.header{
+@media screen and (max-width: 368px) {
+  .header {
     display: none;
-}
-.menu-hamburguesa{
+  }
+  .menu-hamburguesa {
     display: block;
-}
-
-.h1{
+  }
+  .h1 {
     padding: 1rem;
-}
-.h1 h1{
+  }
+  .h1 h1 {
     font-size: 2rem;
-}
-.card-inicio-contenedor{
+  }
+  .card-inicio-contenedor {
     padding: 0rem;
-    margin: 1rem 0rem;
+    margin: 1rem 1rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.7fr 0.5fr 0.7fr;
-    height: 100%;
+    grid-template-rows: 0.3fr 0.1fr 0.3fr;
     box-shadow: none;
-}
-.equipo1 img p{
-    padding: 12px;
-}
-.equipo1 img{
-    width: 8rem;
-    height: 8rem;
-}
-.equipo1 p{
-    font-size: 3rem
-}
-.equipo1{
+    height: 450px;
+  }
+  .equipo1 {
     width: 100%;
-    flex-direction: column;
-}
-.datos p{
-    font-size: 1.2rem;
-}
-.datos h2{
-    font-size: 4rem;
-}
-.grid{
+    flex-direction: row;
+    height: 100%;
+  }
+  .equipo1 p {
+    padding: 0.75rem;
+  }
+  #img-equipo1 {
+    width: 150px;
+    height: 150px;
+  }
+  #img-equipo2 {
+    width: 150px;
+    height: 150px;
+  }
+  .datos p {
+    font-size: 1rem;
+  }
+  .datos h2 {
+    font-size: 2.5rem;
+  }
+  .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     margin: 0rem;
@@ -561,206 +561,410 @@ background: linear-gradient(344deg, rgba(2,0,36,1) 0%, rgba(0,3,111,1) 31%, rgba
     width: 100%;
     height: 100%;
     text-align: center;
-}
-.article1 iframe{
-    width: 15rem;
-}
-.video{
-    width: 300px;
-    margin-left: 35px;
-}
-.article1{
+  }
+  .grid .article1 {
     margin: 0rem;
     padding: 0rem;
     width: 100%;
-}
-.article1 p{
+  }
+  .grid .article1 iframe {
+    width: 15rem;
+  }
+  .grid .article1 p {
     margin: 0rem;
     font-size: 1.2rem;
     width: 100%;
-}
-.article1 h2{
+  }
+  .grid .article1 h2 {
     font-size: 2.5rem;
     margin: 0rem;
     padding: 0rem;
-}
-.seccion2{
+  }
+  .grid .video {
+    width: 300px;
+    margin-left: 35px;
+    padding: 0px;
+  }
+  .seccion2 {
     margin: 2.5rem 0rem;
     padding: 0rem;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-}
-.seccion2 img{
+  }
+  .seccion2 img {
     height: 12rem;
     width: 19.5rem;
-}
-.texto-klay{
-    padding: 0.5rem;
-    margin: 0.5rem;
-}
-.texto-klay p{
-    font-size: 1.2rem;
-}
-.img-klay p{
-    margin: 0rem;
-}
-.img-klay{
-    margin: 0.5rem;
-}
-.game-winner{
-    margin: 0rem;
-    padding: 0rem;
-    margin-top: 5rem;
-}
-.game-winner p{
-    font-size: 1.8rem;
-}
-.game-winner iframe{
-    width: auto;
-    height: auto;
-}
-.texto-wiggins{
-    padding: 0.5rem;
-    margin: 0.5rem;
-}
-.texto-wiggins p{
-    font-size: 1.2rem;
-}
-.texto-dray p{
-    font-size: 1.2rem;
-}
-.jugada-semanal{
-    margin: 0rem;
-    padding: 0rem;
-}
-.jugada-semanal p{
-    padding: 0.5rem;
-}
-.jugada-semanal iframe{
-    height: 250px;
-}
-.titulo-seccion7{
-    padding: 0.5rem;
-}
-.titulo-seccion7 p{
-    font-size: 1.2rem;
-}
-}
-
-/* HISTORIA */
-.seccion-historia{
-    display: grid;
-    grid-template-rows: 1fr;
-    height: 100%;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+  }
+  .texto-klay {
     padding: 2rem;
-    margin: 2rem;
+    margin: 0px;
+  }
+  .texto-klay p {
+    font-size: 1rem;
+  }
+  .img-klay {
+    margin: 0.2rem;
+  }
+  .game-winner {
+    padding: 0px;
+    margin: 0px;
+  }
+  .jugada-semanal {
+    margin: 0rem;
+    text-align: center;
+    padding: 0rem;
+  }
+  .titulo-seccion7 {
+    padding: 0rem 0.5rem;
+  }
+  .btn a {
+    color: white;
+    text-decoration: none;
+  }
 }
-.seccion-historia h1{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 6rem;
-}
-
-
-.seccion-historia img{
-    width: 100%;
-    height: 100%;
-    padding-top: 2rem;
-}
-/* ERAS */
-.grid-eras{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 0.5rem;
-    height: 500px;
-    margin: 0.5rem;
-}
-.card{
-    width: 100%;
-}
-.titulo-eras{
-    display: flex;
-    justify-content: left;
-    margin-left: 2rem;
-    padding-left: 2rem;
-    margin-top: 3rem;
-    padding-top: 3rem;
-}
-.titulo-eras h2{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 3rem;
-}
-.card img{
-    height: 350px;
-}
-.card h3{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2rem;
-}
-/* --------------------------------- */
-/* SLIDES DE CAMPEONATOS */
-.carrusel-contenedor{
-    height: 100vh;
+.card-general, .contenedor-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0.5rem;
+  height: 12rem;
 }
 
-
-.carousel-item img{
-    height:  55rem;
+.menu-hamburguesa {
+  display: block;
+  width: auto;
+  height: 70px;
 }
-/* CALENDARIO */
+@media screen and (min-width: 768px) {
+  .menu-hamburguesa {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu-hamburguesa {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-hamburguesa {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .menu-hamburguesa {
+    display: none;
+  }
+}
 
-.grid-calendario{
+.grid-calendario {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+@media screen and (min-width: 768px) {
+  .grid-calendario {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    column-gap: 20px;
+  }
 }
-.contenedor-card img{
-    height: 7rem;
-    width: 12.5rem;
-    padding: 0.5;
-}
-.contenedor-card{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* background-image: linear-gradient(#00036F, #FFD200); */
-    text-align: center;
-    border-radius: 10px;
-    margin: 1.5rem;
-    height: 15rem;
-}
-.datos-calendario{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.team{
+@media screen and (min-width: 1024px) {
+  .grid-calendario {
     margin: 1rem;
+  }
 }
-.contenedor-card p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+@media screen and (min-width: 1200px) {
+  .grid-calendario {
+    margin: 1.2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .grid-calendario {
+    margin: 1.5rem;
+  }
 }
 
-.datos-calendario :nth-child(2){
+.contenedor-card {
+  background-color: #FFD200;
+}
+.contenedor-card img {
+  height: 3.5rem;
+  width: 8rem;
+  margin: 0.5rem;
+}
+.contenedor-card .datos-calendario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contenedor-card .datos-calendario :nth-child(2) {
+  font-size: 2.2rem;
+  font-family: "Bebas Neue", cursive;
+}
+.contenedor-card .datos-calendario p {
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 1024px) {
+  .contenedor-card .datos-calendario :nth-child(2) {
     font-size: 3rem;
-    font-family: 'Bebas Neue', cursive;
+  }
+  .contenedor-card .datos-calendario p {
+    font-size: 1.2rem;
+  }
 }
-.datos-calendario p{
-    font-size: 1.5rem;
-}
-.team :nth-child(2){
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2rem;
-    margin: 0.5rem;
-}
-.titulo-contenedor-calendario{
-    text-align: center;
-    margin: 4rem;
-    font-family: 'Bebas Neue', cursive;
-}
-.titulo-contenedor-calendario h1{
+@media screen and (min-width: 1440px) {
+  .contenedor-card .datos-calendario :nth-child(2) {
     font-size: 4rem;
+  }
+  .contenedor-card .datos-calendario p {
+    font-size: 1.5rem;
+  }
 }
+@media screen and (min-width: 768px) {
+  .contenedor-card {
+    margin: 0.3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedor-card {
+    height: 14rem;
+  }
+  .contenedor-card img {
+    height: 6rem;
+    width: 11rem;
+    margin: 0.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contenedor-card {
+    height: 15rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contenedor-card {
+    height: 17rem;
+  }
+  .contenedor-card img {
+    height: 7rem;
+    width: 13rem;
+  }
+}
+
+.team {
+  margin: 1rem 0rem;
+}
+.team :nth-child(2) {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+.team :nth-child(3) {
+  margin: 0.5rem 0rem;
+}
+@media screen and (min-width: 1024px) {
+  .team {
+    margin-top: 0.5rem;
+  }
+  .team :nth-child(2) {
+    font-size: 2rem;
+    margin: 0.3rem;
+  }
+  .team :nth-child(3) {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team :nth-child(2) {
+    font-size: 2.2rem;
+  }
+  .team :nth-child(3) {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .team :nth-child(2) {
+    font-size: 2.5rem;
+  }
+  .team :nth-child(3) {
+    font-size: 1.5rem;
+  }
+}
+
+.titulo-contenedor-calendario {
+  text-align: center;
+  margin: 2rem;
+  font-family: "Bebas Neue", cursive;
+}
+.titulo-contenedor-calendario h1 {
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 1200px) {
+  .titulo-contenedor-calendario {
+    margin: 3rem;
+  }
+  .titulo-contenedor-calendario h1 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .titulo-contenedor-calendario {
+    margin: 5rem;
+  }
+  .titulo-contenedor-calendario h1 {
+    font-size: 5rem;
+  }
+}
+
+#seccion-historia {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../image/chase\ center2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.titulo-historico {
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  padding: 2rem;
+}
+.titulo-historico h1 {
+  color: white;
+  font-size: 5rem;
+}
+
+.texto-historico {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  margin: 1rem;
+  text-align: start;
+  align-items: center;
+}
+.texto-historico img {
+  width: 27rem;
+  border-radius: 10px;
+  margin: 0rem 1.2rem;
+}
+.texto-historico p {
+  padding: 1rem;
+}
+
+.seccion-eras {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1.5rem;
+  margin: 1.2rem;
+  grid-template-rows: 1fr;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 35rem;
+}
+.card div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+  transition: all 1s;
+  transform: scale(-1);
+  overflow: hidden;
+}
+.card .frente {
+  transform: perspective(500px) rotateY(0deg);
+  text-align: center;
+  border-radius: 1rem;
+}
+.card .frente h2 {
+  position: absolute;
+  bottom: 0rem;
+  width: 100%;
+  height: 6rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  font-family: "Bebas Neue", cursive;
+  padding: 1rem;
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+.card .frente img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+}
+.card .dorso {
+  background: #00036F;
+  transform: perspective(500px) rotateY(180deg);
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2rem;
+}
+.card .dorso h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+}
+.card .dorso p {
+  font-family: "Roboto", sans-serif;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.card:hover .frente {
+  transform: perspective(500px) rotateY(180deg);
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+}
+
+.card:hover .dorso {
+  transform: perspective(500px) rotateY(360deg);
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.5);
+}
+
+.titulo-eras {
+  display: flex;
+  justify-content: left;
+  margin: 2rem;
+  padding: 2rem;
+  margin-top: 3rem;
+  padding-top: 3rem;
+}
+.titulo-eras h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 4rem;
+}
+
+.carrusel-contenedor {
+  height: 46.5rem;
+}
+
+.carousel-item img {
+  width: 90%;
+  height: 46.5rem;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+.carousel-caption h3 {
+  font-size: 2.7rem;
+  font-family: "Bebas Neue", cursive;
+}
+.carousel-caption p {
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  padding: 0.3rem;
+}
+
+/*# sourceMappingURL=estilos.css.map */
