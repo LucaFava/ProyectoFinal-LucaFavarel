@@ -5,10 +5,446 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+            <!-- Google fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&display=swap" rel="stylesheet">    
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Link de CSS -->
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <p>hola
-        
-    </p>
+    <!-- Menu hamburguesa -->
+    <header class="menu-hamburguesa">
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <img src="../image/logo.png" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">GSW</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./calendario.html">Calendario</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./jugadores.html">Jugadores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./historia.html">Historia</a>
+                      </li>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <header class="header">
+        <div class="logo">
+            <img src="../image/logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Sobre nosotros</a></li>
+                <li><a href="./pages/inicio.html">Inicio</a></li>
+                <li><a href="./calendario.html">Calendario</a></li>
+                <li><a href="./historia.html">Historia</a></li>
+                <li><a href="./jugadores.html">Jugadores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <section class="titulo-jugadores">
+        <article>
+          <h1>Plantilla</h1>
+        </article>
+      </section>
+      <section class="grid-jugadores">
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/dni curry.png" alt="jugador">
+            <h2>Stephen Curry #30</h2>
+            <p>Base</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>35</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>1,88</p>
+          </div>
+          <div>
+            <h2>Peso</h2>
+            <p>83kg</p>
+          </div>
+        </article>
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/patrick baldwin.png" alt="jugador">
+            <h2>Patrick Baldwin Jr #7</h2>
+            <p>Alero</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>20</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>2,06</p>
+          </div>
+          <div>
+            <h2>Peso</h2>
+            <p>99kg</p>
+          </div>
+        </article>
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/donte.png" alt="jugador">
+            <h2>Donte Divincenzo #0</h2>
+            <p>Escolta</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>26</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>1,93</p>
+          </div>
+          <div>
+            <h2>Peso</h2>
+            <p>92kg</p>
+          </div>
+        </article>
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/dray.png" alt="jugador">
+            <h2>Draymond Green #23</h2>
+            <p>Ala-Pivot</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>33</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>1,98</p>
+          </div>
+          <div>
+            <h2>Peso</h2>
+            <p>104kg</p>
+          </div>
+        </article>
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/jamychal.png" alt="jugador">
+            <h2>JaMychal Green #1</h2>
+            <p>Ala-Pivot</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>32</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>2,06</p>
+          </div>
+          <div>
+            <h2>Peso</h2>
+            <p>102kg</p>
+          </div>
+        </article>
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/iggy.png" alt="jugador">
+            <h2>Andre Iguodala #9</h2>
+            <p>Alero</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>39</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>1,98</p>
+          </div>
+          <div>
+            <h2>Peso</h2>
+            <p>97kg</p>
+          </div>
+        </article>
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/ty jerome.png" alt="jugador">
+            <h2>Ty Jerome #10</h2>
+            <p>Escolta</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>25</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>1,96</p>
+          </div>
+          <div>
+            <h2>Peso</h2>
+            <p>88kg</p>
+          </div>
+        </article>
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/kuminga.png" alt="jugador">
+            <h2>Jonathan Kuminga #00</h2>
+            <p>Ala-Pivot</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>20</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>2,01</p>
+          </div>
+          <div>
+            <h2>Peso</h2>
+            <p>102kg</p>
+          </div>
+        </article>
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/lamb.png" alt="jugador">
+            <h2>Anthony Lamb #40</h2>
+            <p>Alero</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>25</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>1,98</p>
+          </div>
+          <div>
+            <h2>Peso</h2>
+            <p>102kg</p>
+          </div>
+        </article>
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/looney.png" alt="jugador">
+            <h2>Kevon Looney #5</h2>
+            <p>Pivot</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>27</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>2,06</p>
+          </div>
+          <div>
+            <h2>Peso</h2>
+            <p>100kg</p>
+          </div>
+        </article>
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/moody.png" alt="jugador">
+            <h2>Moses Moody #4</h2>
+            <p>Escolta</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>20</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>1,96</p>
+          </div>
+          <div>
+            <h2>Peso</h2>
+            <p>95kg</p>
+          </div>
+        </article>
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/payton.png" alt="jugador">
+            <h2>Gary Payton II #8</h2>
+            <p>Escolta</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>30</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>1,88</p>
+          </div>
+          <div>
+            <h2>Peso</h2>
+            <p>88kg</p>
+          </div>
+        </article>
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/poole.png" alt="jugador">
+            <h2>Jordan Poole #3</h2>
+            <p>Escolta</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>23</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>1,93</p>
+          </div>
+          <div>
+            <h2>Peso</h2>
+            <p>87kg</p>
+          </div>
+        </article>
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/lester.png" alt="jugador">
+            <h2>Lester Quinones #25</h2>
+            <p>Escolta</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>22</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>1,93</p>
+          </div>
+          <div>
+            <h2>Peso</h2>
+            <p>94kg</p>
+          </div>
+        </article>
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/rollins.png" alt="jugador">
+            <h2>Ryan Rollins #2</h2>
+            <p>Escolta</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>20</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>1,91</p>
+          </div>
+          <div>
+            <h2>Peso</h2>
+            <p>81kg</p>
+          </div>
+        </article>
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/klay t.png" alt="jugador">
+            <h2>Klay Thompson #11</h2>
+            <p>Escolta</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>33</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>1,98</p>
+          </div>
+          <div>
+            <h2>Peso</h2>
+            <p>99kg</p>
+          </div>
+        </article>
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/andrew.png" alt="jugador">
+            <h2>Andrew Wiggins #22</h2>
+            <p>Alero</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>28</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>2,01</p>
+          </div>
+          <div>
+            <h2>Peso</h2>
+            <p>89kg</p>
+          </div>
+        </article>
+        <article class="card-jugadores">
+          <div class="foto">
+            <img src="../image/steve.webp" alt="jugador">
+            <h2>Steve Kerr</h2>
+            <p>Couch</p>
+          </div>
+          <div>
+            <h2>Edad</h2>
+            <p>57</p>
+          </div>
+          <div>
+            <h2>Altura</h2>
+            <p>1,91</p>
+          </div>
+          <div>
+            <h2>anillos</h2>
+            <p>8</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- scrip boostrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

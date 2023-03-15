@@ -1,0 +1,129 @@
+$font-titulo:5rem;
+$color-base: #00036F;
+$color-amarillo-base: #FFD200;
+$gradiente-nav: linear-gradient(344deg, rgba(2,0,36,1) 0%, rgba(0,3,111,1) 31%, rgba(39,34,94,1) 52%, rgba(116,96,60,1) 67%, rgba(182,150,32,1) 85%, rgba(255,210,0,1) 100%);
+$font-golos: 'Golos Text', sans-serif;
+$breakpoints:(
+    sm : 368px,
+    md : 768px,
+    lg : 1024px,
+    xl : 1200px,
+    xxl : 1440px
+);
+@mixin media-up($breakpoint){
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+.titulo-jugadores{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    h1{
+        font-size: 3rem;
+    }
+}
+.grid-jugadores{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    @include media-up(md){
+        grid-template-rows: 1fr;
+        row-gap: 3rem;
+    }
+    @include media-up(lg){
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 3rem;
+        row-gap: 1.5rem;
+        margin: 2rem;
+    }
+}
+
+.card-jugadores{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    height: 9rem;
+    margin: 0.5rem;
+    background: $gradiente-nav;
+    border-radius: 10px;
+    h2{
+        font-size: 1.1rem;
+        font-family: 'Bebas Neue', cursive;
+        margin-top: 0.5rem;
+        color: rgb(255, 255, 255);
+    }
+    p{
+        font-family:$font-golos; 
+        font-size: 0.8rem;
+        color: rgb(255, 255, 255);
+    }
+    .foto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        img{
+            width: 5rem;
+            
+        }
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    @include media-up(md){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: $gradiente-nav;
+        height: 100%;
+        margin: 1rem;
+        color: white;
+        h2{
+            font-size: 1.2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+        .foto{
+            img{
+                width: 7rem;
+            }
+        }
+    }
+    @include media-up(lg){
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4);
+        }
+        div{
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: white;
+            h2{
+                color: white;
+            }
+
+            p{
+                margin: 0;
+                padding-left: 1rem;
+                color: white;
+            }
+        }
+        .foto{
+            :nth-child(3){
+                padding: 0;
+            }
+        }
+    }
+}
