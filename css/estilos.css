@@ -1,12 +1,17 @@
 .menu-hamburguesa {
   display: none;
+  position: absolute;
+}
+
+.navbar {
+  display: none;
 }
 
 .header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 100px;
+  height: 90px;
   padding: 5px 20px;
   background: rgb(2, 0, 36);
   background: linear-gradient(344deg, rgb(2, 0, 36) 0%, rgb(0, 3, 111) 31%, rgb(39, 34, 94) 52%, rgb(116, 96, 60) 67%, rgb(182, 150, 32) 85%, rgb(255, 210, 0) 100%);
@@ -16,7 +21,7 @@
   margin: 0px;
 }
 .header .nav-links a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: white;
   text-decoration: none;
   font-family: "Golos Text", sans-serif;
@@ -31,15 +36,13 @@
 .header .nav-links li:hover {
   transform: scale(1.2);
 }
-
-.logo {
+.header .logo {
   width: 10rem;
   height: 5rem;
   margin-right: auto;
   border-radius: 100%;
 }
-
-.logo img {
+.header .logo img {
   width: 10rem;
   height: 5rem;
   border-radius: 90px;
@@ -48,34 +51,37 @@
 .seccion {
   width: 100%;
   height: 100vh;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../image/curry\ campeon.jpg);
+  background-size: 100vw 100vh;
 }
-
-.titulo {
+.seccion .titulo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70%;
-  margin: 2rem;
-  padding: 2rem;
+  height: 90%;
 }
-.titulo h1 {
+.seccion .titulo h1 {
   font-family: "Bebas Neue", cursive;
-  font-size: 10rem;
+  font-size: 8rem;
+  color: #FFD200;
 }
-.titulo p {
+.seccion .titulo p {
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 0rem 2rem;
+  color: white;
 }
-
-.conector {
+.seccion .conector {
   font-family: "Roboto", sans-serif;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-style: italic;
   margin-left: 2rem;
+  color: white;
+}
+.seccion .conector p {
+  font-family: "Roboto", sans-serif;
 }
 
 .secciones {
@@ -86,135 +92,116 @@
   display: flex;
   align-items: center;
 }
-
-.img-contenedor {
-  width: 768px;
-  height: 528px;
-  margin: 1.5rem;
+.secciones .img-contenedor {
+  width: 40rem;
+  height: 25rem;
+  margin: 1rem;
 }
-.img-contenedor img {
-  width: 48rem;
-  height: 33rem;
+.secciones .img-contenedor img {
+  width: 40rem;
+  height: 25rem;
   border-radius: 30px;
 }
-
-.texto {
-  width: 50rem;
-  font-size: 1.8rem;
-  padding: 4rem;
+.secciones .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  padding: 1rem;
   text-align: center;
 }
-.texto p {
+.secciones .texto p {
   font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
 }
-.texto h2 {
+.secciones .texto h2 {
   font-family: "Bebas Neue", cursive;
   font-size: 5rem;
 }
 
 @media screen and (max-width: 768px) {
-  .header {
-    justify-content: center;
+  .header .logo {
+    width: 9rem;
+    height: 4rem;
   }
-  .header .nav-links {
-    padding: 0px 10px;
+  .header .logo img {
+    width: 9rem;
+    height: 4rem;
   }
-  .header .nav-links li {
-    margin: 0px 12px;
-  }
-  .header .nav-links li:hover {
-    transform: none;
-  }
-  .header .nav-links li a {
+  .header .nav-links a {
     font-size: 1rem;
   }
-  .header .nav-links li a:hover {
-    transform: none;
-    color: white;
+  .header .nav-links li {
+    margin: 0 12px;
   }
-  .secciones {
-    grid-template-columns: 2fr 1fr;
-    height: 25rem;
-  }
-  .titulo {
-    padding: 1.5rem;
-    margin: 1.5rem;
-  }
-  .titulo h1 {
-    font-size: 3rem;
-  }
-  .titulo p {
-    font-size: 1.5rem;
-    padding: 1rem;
+  .secciones .img-contenedor {
+    width: 26rem;
+    height: 18rem;
     margin: 1rem;
   }
-  .conector {
-    font-size: 1.7rem;
+  .secciones .img-contenedor img {
+    width: 26rem;
+    height: 18rem;
+    border-radius: 30px;
   }
-  .img-contenedor {
-    height: 20rem;
-    width: 20rem;
+  .secciones .texto {
+    font-size: 1rem;
   }
-  .img-contenedor img {
-    height: 15rem;
-    width: 20rem;
-    border-radius: 5px;
+  .secciones .texto p {
+    font-size: 1rem;
   }
-  .texto {
-    padding: 1rem;
-  }
-  .texto h2 {
+  .secciones .texto h2 {
     font-size: 3rem;
-  }
-  .texto p {
-    font-size: 1.2rem;
-  }
-  .lista {
-    margin: 0px;
   }
 }
 @media screen and (max-width: 368px) {
-  .menu-hamburguesa {
-    display: block;
-    width: auto;
-    height: 70px;
-  }
-  .navbar {
-    width: auto;
-  }
   .header {
     display: none;
   }
-  .container-fluid img {
-    height: 50px;
-    width: 100px;
+  .navbar {
+    display: block;
+  }
+  .menu-hamburguesa {
+    display: block;
+  }
+  .menu-hamburguesa .navbar {
+    width: 368px;
+    height: 70px;
+  }
+  .menu-hamburguesa img {
+    width: 7rem;
+    border-radius: 90px;
   }
   .seccion {
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../image/curry\ fondo\ inicio.jpg);
   }
-  .seccion p {
+  .seccion .titulo h1 {
+    font-size: 5rem;
+  }
+  .seccion .titulo p {
     font-size: 1rem;
   }
-  .titulo {
-    width: 100%;
-    padding: 0rem;
-    margin: 0.5rem;
-  }
-  p {
-    padding: 0rem;
+  .seccion .conector p {
+    font-size: 1rem;
   }
   .secciones {
-    grid-template-columns: 0fr;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: 35rem;
   }
-  .secciones img {
-    display: none;
+  .secciones .texto {
+    width: 100%;
+    color: black;
+    background: white;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
   }
-  .img-contenedor {
+  .secciones .img-contenedor {
     display: none;
   }
 }
@@ -506,8 +493,43 @@
   .seccion2 p {
     font-size: 0.9rem;
   }
-  .boton-historia {
-    padding: 1rem;
+  .historia {
+    padding: 0rem;
+    margin: 0rem;
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .historia img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    border-radius: 0px;
+  }
+  .historia .titulo-seccion7 {
+    position: relative;
+    top: 6.5rem;
+    width: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .historia .titulo-seccion7 h2 {
+    font-size: 3rem;
+    color: white;
+  }
+  .historia .titulo-seccion7 p {
+    font-size: 1.3rem;
+    color: white;
+  }
+  .historia .titulo-seccion7 .boton {
+    width: 10rem;
+    height: 4rem;
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.9);
+    margin-top: 1rem;
+  }
+  .historia .titulo-seccion7 .boton a {
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 368px) {
@@ -614,12 +636,42 @@
     text-align: center;
     padding: 0rem;
   }
-  .titulo-seccion7 {
-    padding: 0rem 0.5rem;
+  .historia {
+    height: 571px;
+    padding: 0rem;
+    margin: 0rem;
+    grid-template-columns: 1fr;
   }
-  .btn a {
+  .historia .img-contenedor-73-9 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+  }
+  .historia .titulo-seccion7 {
+    position: relative;
+    top: 0rem;
+    width: 100%;
     color: white;
-    text-decoration: none;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .historia .titulo-seccion7 h2 {
+    font-size: 3rem;
+    color: white;
+  }
+  .historia .titulo-seccion7 p {
+    font-size: 1.3rem;
+    color: white;
+  }
+  .historia .titulo-seccion7 .boton {
+    width: 10rem;
+    height: 4rem;
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.9);
+    margin-top: 1rem;
+  }
+  .historia .titulo-seccion7 .boton a {
+    font-size: 1.2rem;
   }
 }
 .card-general, .contenedor-card {
@@ -836,6 +888,7 @@
 }
 
 .texto-historico {
+  font-family: "Roboto", sans-serif;
   color: white;
   display: flex;
   flex-direction: row;
@@ -850,6 +903,25 @@
   margin: 0rem 1.2rem;
 }
 .texto-historico p {
+  padding: 1rem;
+}
+
+.texto-historico2 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  margin: 1rem;
+  text-align: start;
+  align-items: center;
+}
+.texto-historico2 img {
+  width: 27rem;
+  border-radius: 10px;
+  margin: 0rem 1.2rem;
+}
+.texto-historico2 p {
   padding: 1rem;
 }
 
@@ -967,6 +1039,47 @@
   padding: 0.3rem;
 }
 
+@media screen and (max-width: 768px) {
+  #seccion-historia h1 {
+    font-size: 4rem;
+  }
+  .texto-historico p {
+    font-size: 1.1rem;
+    padding: 0.2rem;
+    width: 22rem;
+  }
+  .texto-historico img {
+    width: 22rem;
+    margin: 0.5rem;
+  }
+  .texto-historico2 p {
+    font-size: 1.1rem;
+    padding: 0.2rem;
+  }
+  .texto-historico2 img {
+    display: none;
+  }
+}
+.seccion-eras {
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+}
+
+.carrusel-contenedor {
+  height: 20rem;
+}
+.carrusel-contenedor .carousel-item img {
+  width: 90%;
+  height: 0rem;
+}
+
+.card .dorso h2 {
+  font-size: 2rem;
+}
+.card .dorso p {
+  padding: 0rem 1rem;
+}
+
 .titulo-jugadores {
   text-align: center;
   margin: 1rem;
@@ -980,6 +1093,13 @@
 .grid-jugadores {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+@media screen and (min-width: 768px) {
+  .grid-jugadores {
+    grid-template-rows: 1fr;
+    row-gap: 3rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   .grid-jugadores {
@@ -1003,12 +1123,12 @@
   font-size: 1.1rem;
   font-family: "Bebas Neue", cursive;
   margin-top: 0.5rem;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .card-jugadores p {
   font-family: "Golos Text", sans-serif;
   font-size: 0.8rem;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .card-jugadores .foto {
   display: flex;
@@ -1032,6 +1152,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: linear-gradient(344deg, rgb(2, 0, 36) 0%, rgb(0, 3, 111) 31%, rgb(39, 34, 94) 52%, rgb(116, 96, 60) 67%, rgb(182, 150, 32) 85%, rgb(255, 210, 0) 100%);
     height: 100%;
+    margin: 1rem;
+    color: white;
   }
   .card-jugadores h2 {
     font-size: 1.2rem;
