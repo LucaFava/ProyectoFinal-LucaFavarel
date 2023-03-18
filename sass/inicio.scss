@@ -428,17 +428,19 @@ $font-golos: 'Golos Text', sans-serif;
             height: 12rem;
             width: 19.5rem;
         }
-    }
-    .texto-klay{
-        padding: 2rem;
-        margin: 0px;
-        p{
-            font-size: 1rem;
+        .texto-klay{
+            padding: 2rem;
+            margin: 0px;
+            p{
+                font-size: 1rem;
+            }
+        }
+        .img-klay{
+            margin: 0.2rem;
         }
     }
-    .img-klay{
-        margin: 0.2rem;
-    }
+
+ 
     //  GAME WINNER
     .game-winner{
         padding: 0px;
