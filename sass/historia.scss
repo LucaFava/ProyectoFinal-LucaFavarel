@@ -284,5 +284,27 @@ $font-texto:'Roboto', sans-serif;
     .seccion-eras{
         grid-template-columns: 1fr;
     }
+    #carouselExample{
+        .carousel-inner{
+            .carousel-item{
+                margin-bottom: 0.5rem;
+                height: 17rem;
+                img{
+                    height: 17rem;
+                }
+                .carousel-caption{
+                    h3{
+                        background: none;
+                        font-size: 20px;
+                        margin: 0rem;
+                        padding: 0rem;
+                    }
+                    p{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 

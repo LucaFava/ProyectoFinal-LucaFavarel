@@ -1138,6 +1138,22 @@
   .seccion-eras {
     grid-template-columns: 1fr;
   }
+  #carouselExample .carousel-inner .carousel-item {
+    margin-bottom: 0.5rem;
+    height: 17rem;
+  }
+  #carouselExample .carousel-inner .carousel-item img {
+    height: 17rem;
+  }
+  #carouselExample .carousel-inner .carousel-item .carousel-caption h3 {
+    background: none;
+    font-size: 20px;
+    margin: 0rem;
+    padding: 0rem;
+  }
+  #carouselExample .carousel-inner .carousel-item .carousel-caption p {
+    display: none;
+  }
 }
 .titulo-jugadores {
   text-align: center;
