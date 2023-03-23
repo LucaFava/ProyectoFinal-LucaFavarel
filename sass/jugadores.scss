@@ -1,130 +1,119 @@
-$font-titulo:5rem;
 $color-base: #00036F;
 $color-amarillo-base: #FFD200;
 $gradiente-nav: linear-gradient(344deg, rgba(2,0,36,1) 0%, rgba(0,3,111,1) 31%, rgba(39,34,94,1) 52%, rgba(116,96,60,1) 67%, rgba(182,150,32,1) 85%, rgba(255,210,0,1) 100%);
-$font-golos: 'Golos Text', sans-serif;
-$breakpoints:(
-    sm : 368px,
-    md : 768px,
-    lg : 1024px,
-    xl : 1200px,
-    xxl : 1440px
-);
-@mixin media-up($breakpoint){
-    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
-        @content;
-    }
-}
+$fondo-img: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+url();
+$font-titulo:'Bebas Neue', cursive;
+$font-texto:'Roboto', sans-serif;
+$sombra: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+
+
+
+
 .titulo-jugadores{
     text-align: center;
-    margin: 1rem;
-    padding: 1rem;
-    font-family: 'Bebas Neue', cursive;
+    font-family: $font-titulo;
+    margin: 6rem;
     h1{
-        font-size: 3rem;
+        font-size: 5rem;
     }
 }
+
+
 .grid-jugadores{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    @include media-up(md){
-        grid-template-rows: 1fr;
-        row-gap: 3rem;
-    }
-    @include media-up(lg){
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 3rem;
-        row-gap: 1.5rem;
-        margin: 2rem;
-    }
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 8rem;
+    row-gap: 8rem;
+    margin: 4rem;
 }
 
 .card-jugadores{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    text-align: center;
-    height: 9rem;
-    margin: 0.5rem;
-    background: $gradiente-nav;
-    border-radius: 10px;
-    h2{
-        font-size: 1.1rem;
-        font-family: 'Bebas Neue', cursive;
-        margin-top: 0.5rem;
-        color: rgb(255, 255, 255);
-    }
-    p{
-        font-family:$font-golos; 
-        font-size: 0.8rem;
-        color: rgb(255, 255, 255);
-    }
-    .foto{
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    div{
+        position: absolute;
+        width: 100%;
+        height: 100%;
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+        // flex-direction: column;
+        backface-visibility: hidden;
+        transition: 1s;
+    }
+    .front{
+        background: #00036F;
+        transform: perspective(500px) rotateY(0deg);
+        border-radius: 3rem;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 3rem;
+        }
+        .nombre{
+            display: flex;
+            flex-direction: column;
+            bottom: 0rem;
+            background: rgb(0,0,0, .4);
+            height: 5rem;
+            position: absolute;
+            color: white;
+            border-radius: 3rem;
+            font-family: $font-titulo;
+            h2{
+                margin: 0.2rem;
+            }
+            p{
+                font-family: $font-texto;
+            }
+        }
+    }
+    .back{
+        background: $color-base;
+        transform: perspective(500px) rotateY(180deg);
+        width: 100%;
+        display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        height: 100%;
-        img{
-            width: 5rem;
-            
-        }
-    }
-    div{
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-    }
-    @include media-up(md){
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        background-color: $gradiente-nav;
-        height: 100%;
-        margin: 1rem;
+        padding: 2rem;
+        border-radius: 3rem;
         color: white;
-        h2{
-            font-size: 1.2rem;
-        }
-        p{
-            font-size: 1rem;
-        }
-        .foto{
-            img{
-                width: 7rem;
+    }
+}
+.card-jugadores:hover .front{
+        transform: perspective(500px) rotateY(180deg);
+        box-shadow: $sombra;
+}
+.card-jugadores:hover .back{
+    transform: perspective(500px) rotateY(360deg);
+    box-shadow: $sombra;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px){
+    .grid-jugadores{
+        margin: 3rem;
+        column-gap: 3rem;
+    }
+    .card-jugadores{
+        .front{
+            .nombre{
+                border-radius: 1rem 1rem 3rem 3rem;
+                h2{
+                    font-size: 1.5rem;
+                }
             }
         }
     }
-    @include media-up(lg){
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-
-        &:hover{
-            transition: all 1s;
-            transform: scale(1.1);
-            box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4);
-        }
-        div{
-            flex-direction: row;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            color: white;
-            h2{
-                color: white;
-            }
-
-            p{
-                margin: 0;
-                padding-left: 1rem;
-                color: white;
-            }
-        }
-        .foto{
-            :nth-child(3){
-                padding: 0;
-            }
-        }
+}
+@media screen and (max-width: 368px) {
+    .grid-jugadores{
+        grid-template-columns:  1fr;
+        column-gap: 2rem;
+        margin: 1rem;    
     }
 }

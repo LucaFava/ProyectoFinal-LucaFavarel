@@ -6,6 +6,7 @@ $fondo-img: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
 url();
 $font-titulo:'Bebas Neue', cursive;
 $font-texto:'Roboto', sans-serif;
+$sombra: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
 .menu-hamburguesa{
     display: none;
     position: absolute;
@@ -71,7 +72,7 @@ $font-texto:'Roboto', sans-serif;
         h1{
             font-family: 'Bebas Neue', cursive;
             font-size: 8rem;
-            color: #FFD200;
+            color: #fbff00;
         }
         p{
             font-family: 'Roboto', sans-serif;
@@ -107,6 +108,8 @@ $font-texto:'Roboto', sans-serif;
             width: 40rem;
             height: 25rem;
             border-radius: 30px;
+            }
+            
         }
     }
     .texto{
@@ -125,7 +128,7 @@ $font-texto:'Roboto', sans-serif;
             font-size: 5rem;
         }
     }
-}
+
 // MEDIA QUERIES (768PX)
 @media screen and (max-width: 768px){
    

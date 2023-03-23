@@ -64,7 +64,7 @@
 .seccion .titulo h1 {
   font-family: "Bebas Neue", cursive;
   font-size: 8rem;
-  color: #FFD200;
+  color: #fbff00;
 }
 .seccion .titulo p {
   font-family: "Roboto", sans-serif;
@@ -102,7 +102,8 @@
   height: 25rem;
   border-radius: 30px;
 }
-.secciones .texto {
+
+.texto {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,11 +111,11 @@
   padding: 1rem;
   text-align: center;
 }
-.secciones .texto p {
+.texto p {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
 }
-.secciones .texto h2 {
+.texto h2 {
   font-family: "Bebas Neue", cursive;
   font-size: 5rem;
 }
@@ -219,10 +220,10 @@
 .card-inicio-contenedor {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
-  margin: 2.5rem;
-  height: 30rem;
+  margin: 4rem;
+  height: 25rem;
   border-radius: 10px;
-  box-shadow: 5px 5px 4px 4px rgb(165, 165, 165);
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
 }
 
 .equipo1 {
@@ -407,7 +408,6 @@
 .historia .boton a {
   color: white;
   text-decoration: none;
-  font-family: "Golos Text", sans-serif;
   font-size: 1.5rem;
 }
 
@@ -1157,117 +1157,104 @@
 }
 .titulo-jugadores {
   text-align: center;
-  margin: 1rem;
-  padding: 1rem;
   font-family: "Bebas Neue", cursive;
+  margin: 6rem;
 }
 .titulo-jugadores h1 {
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .grid-jugadores {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-}
-@media screen and (min-width: 768px) {
-  .grid-jugadores {
-    grid-template-rows: 1fr;
-    row-gap: 3rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .grid-jugadores {
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 3rem;
-    row-gap: 1.5rem;
-    margin: 2rem;
-  }
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 8rem;
+  row-gap: 8rem;
+  margin: 4rem;
 }
 
 .card-jugadores {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  text-align: center;
-  height: 9rem;
-  margin: 0.5rem;
-  background: linear-gradient(344deg, rgb(2, 0, 36) 0%, rgb(0, 3, 111) 31%, rgb(39, 34, 94) 52%, rgb(116, 96, 60) 67%, rgb(182, 150, 32) 85%, rgb(255, 210, 0) 100%);
-  border-radius: 10px;
-}
-.card-jugadores h2 {
-  font-size: 1.1rem;
-  font-family: "Bebas Neue", cursive;
-  margin-top: 0.5rem;
-  color: rgb(255, 255, 255);
-}
-.card-jugadores p {
-  font-family: "Golos Text", sans-serif;
-  font-size: 0.8rem;
-  color: rgb(255, 255, 255);
-}
-.card-jugadores .foto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%;
-}
-.card-jugadores .foto img {
-  width: 5rem;
+  position: relative;
+  width: 100%;
+  height: 25rem;
 }
 .card-jugadores div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+.card-jugadores .front {
+  background: #00036F;
+  transform: perspective(500px) rotateY(0deg);
+  border-radius: 3rem;
+}
+.card-jugadores .front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3rem;
+}
+.card-jugadores .front .nombre {
   display: flex;
   flex-direction: column;
+  bottom: 0rem;
+  background: rgba(0, 0, 0, 0.4);
+  height: 5rem;
+  position: absolute;
+  color: white;
+  border-radius: 3rem;
+  font-family: "Bebas Neue", cursive;
+}
+.card-jugadores .front .nombre h2 {
+  margin: 0.2rem;
+}
+.card-jugadores .front .nombre p {
+  font-family: "Roboto", sans-serif;
+}
+.card-jugadores .back {
+  background: #00036F;
+  transform: perspective(500px) rotateY(180deg);
+  width: 100%;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 3rem;
+  color: white;
 }
-@media screen and (min-width: 768px) {
-  .card-jugadores {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: linear-gradient(344deg, rgb(2, 0, 36) 0%, rgb(0, 3, 111) 31%, rgb(39, 34, 94) 52%, rgb(116, 96, 60) 67%, rgb(182, 150, 32) 85%, rgb(255, 210, 0) 100%);
-    height: 100%;
+
+.card-jugadores:hover .front {
+  transform: perspective(500px) rotateY(180deg);
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+}
+
+.card-jugadores:hover .back {
+  transform: perspective(500px) rotateY(360deg);
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .grid-jugadores {
+    margin: 3rem;
+    column-gap: 3rem;
+  }
+  .card-jugadores .front .nombre {
+    border-radius: 1rem 1rem 3rem 3rem;
+  }
+  .card-jugadores .front .nombre h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 368px) {
+  .grid-jugadores {
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
     margin: 1rem;
-    color: white;
-  }
-  .card-jugadores h2 {
-    font-size: 1.2rem;
-  }
-  .card-jugadores p {
-    font-size: 1rem;
-  }
-  .card-jugadores .foto img {
-    width: 7rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .card-jugadores {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .card-jugadores:hover {
-    transition: all 1s;
-    transform: scale(1.1);
-    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4);
-  }
-  .card-jugadores div {
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    color: white;
-  }
-  .card-jugadores div h2 {
-    color: white;
-  }
-  .card-jugadores div p {
-    margin: 0;
-    padding-left: 1rem;
-    color: white;
-  }
-  .card-jugadores .foto :nth-child(3) {
-    padding: 0;
   }
 }
 

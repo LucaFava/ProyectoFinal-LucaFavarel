@@ -1,10 +1,10 @@
-$font-titulo:5rem;
 $color-base: #00036F;
 $color-amarillo-base: #FFD200;
 $gradiente-nav: linear-gradient(344deg, rgba(2,0,36,1) 0%, rgba(0,3,111,1) 31%, rgba(39,34,94,1) 52%, rgba(116,96,60,1) 67%, rgba(182,150,32,1) 85%, rgba(255,210,0,1) 100%);
-$font-golos: 'Golos Text', sans-serif;
-
-
+$fondo-img: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+url();
+$font-titulo:'Bebas Neue', cursive;
+$font-texto:'Roboto', sans-serif;
 
 .h1{
     font-family: 'Bebas Neue', cursive;
@@ -20,10 +20,10 @@ $font-golos: 'Golos Text', sans-serif;
 .card-inicio-contenedor{
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    margin: 2.5rem;
-    height: 30rem;
+    margin: 4rem;
+    height: 25rem;
     border-radius: 10px;
-    box-shadow: 5px 5px 4px 4px rgb(165, 165, 165);
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
 }
 
 .equipo1{
@@ -205,7 +205,7 @@ $font-golos: 'Golos Text', sans-serif;
         a{
             color: white;
             text-decoration: none;
-            font-family: $font-golos;
+            
             font-size: 1.5rem;
         }
     }
