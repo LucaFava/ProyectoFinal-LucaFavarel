@@ -5,7 +5,7 @@ $fondo-img: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
 url();
 $font-titulo:'Bebas Neue', cursive;
 $font-texto:'Roboto', sans-serif;
-
+// AJUSTES DE TAMAÑOS
 .h1{
     font-family: 'Bebas Neue', cursive;
     display: flex;
@@ -74,12 +74,12 @@ $font-texto:'Roboto', sans-serif;
         p{
             font-family: 'Roboto', sans-serif;
             margin: 40px;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: black; 
         }
         h2{
             font-family: 'Bebas Neue', cursive;
-            font-size: 5rem; 
+            font-size: 4rem; 
         }
     }
     .video{
@@ -100,19 +100,19 @@ $font-texto:'Roboto', sans-serif;
     margin: 2rem;
     background-color: rgb(207,207,207);
     img{
-        height: 450px;
-        width: 700px;
+        height: 25rem;
+        width: 41rem;
         border-radius: 10px;
     }
     .texto-klay{
         margin: 2rem;
         padding: 2rem;
         font-family: 'Roboto', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     p{
         font-family: 'Roboto', sans-serif;
-        font-size: 1.5rem; 
+        font-size: 1.2rem; 
     }
 }
 // SECCION 3
@@ -205,7 +205,6 @@ $font-texto:'Roboto', sans-serif;
         a{
             color: white;
             text-decoration: none;
-            
             font-size: 1.5rem;
         }
     }
