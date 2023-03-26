@@ -1,0 +1,857 @@
+$color-base: #00036F;
+$color-amarillo-base: #FFD200;
+$gradiente-nav: linear-gradient(344deg, rgba(2,0,36,1) 0%, rgba(0,3,111,1) 31%, rgba(39,34,94,1) 52%, rgba(116,96,60,1) 67%, rgba(182,150,32,1) 85%, rgba(255,210,0,1) 100%);
+$fondo-img: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+url();
+$font-titulo:'Bebas Neue', cursive;
+$font-texto:'Roboto', sans-serif;
+$sombra: 14px 14px 20px 0 rgba(20, 20, 20, 0.7);
+$font-anchors: 'Golos Text', sans-serif;
+
+.videos{
+    display: none;
+}
+.section8-mobile{
+    display: none;
+}
+.section8-mobile2{
+    display: none;
+}
+.seccion-inicial{
+    width: 100%;
+    height: 100vh;
+}
+.texto-presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+    bottom: 10rem;
+    h1{
+        font-family: $font-titulo;
+        font-size: 5rem;
+    }
+    p{
+        font-family: $font-texto;
+        font-size: 1.2rem;
+        padding: 2rem 7rem;
+    }
+}
+.boton-volver{
+    top: 1rem;
+    margin: 2rem;
+    background: color white;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    border: 0px;
+    a{
+        color: black;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: $sombra;
+        transition: all 0.5s;
+    }
+}
+.fondo{
+    height: 100vh;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+    url(../image/warriors\ 2015-16.jpg);
+    background-size: 100vw 100vh;
+    color: white;
+}
+.intro{
+    text-align: center;
+    height: 100vh;
+    background:linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+    url(../image/warriors\ 73-9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    }
+    .article-intro{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    img{
+        width: 35rem;
+        margin: 2rem;
+    }
+    p{
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        border-radius: 1rem;
+        box-shadow: $sombra;
+        font-family: $font-texto;
+    }
+    }
+
+.section{
+    text-align: center;
+    height: 100vh;
+    background:linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+    url(../image/dray\ 5x5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    img{
+        width: 35rem;
+        border-radius: 10px;
+        margin: 2rem;
+    }
+    .title{
+        text-align: center;
+        color: #FFD200;
+        font-family: $font-titulo;
+        padding: 2rem;
+        h2{
+            font-size: 4rem;
+        }
+    }
+    .article{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        p{
+            padding: 2rem;
+            background-color: white;
+            margin: 2rem;
+            border-radius: 1rem;
+            box-shadow: $sombra;
+            font-family: $font-texto;
+        }
+    }
+}
+.section-2{
+    text-align: center;
+    height: 100vh;
+    background:linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+    url(../image/dray\ y\ curry\ 2015.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .title{
+        text-align: center;
+        color: #FFD200;
+        font-family: $font-titulo;
+        padding: 2rem;
+        h2{
+            font-size: 4rem;
+        }
+    }
+    .article-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    img{
+        width: 35rem;
+        margin: 2rem;
+    }
+    p{
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        border-radius: 1rem;
+        box-shadow: $sombra;
+        font-family: $font-texto;
+    }
+    }
+}
+.section-3{
+    text-align: center;
+    height: 100vh;
+    background:linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+    url(../image/curry\ vs\ dallas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    img{
+        width: 35rem;
+        border-radius: 10px;
+        margin: 2rem;
+    }
+    .title{
+        text-align: center;
+        color: #FFD200;
+        font-family: $font-titulo;
+        padding: 2rem;
+        h2{
+            font-size: 4rem;
+        }
+    }
+    .article-3{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        p{
+            padding: 2rem;
+            background-color: white;
+            margin: 2rem;
+            border-radius: 1rem;
+            box-shadow: $sombra;
+            font-family: $font-texto;
+        }
+    }
+}
+.section-4{
+    text-align: center;
+    height: 100vh;
+    background:linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+    url(../image/curry\ abril.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    img{
+        width: 35rem;
+        border-radius: 10px;
+        margin: 2rem;
+    }
+    .title{
+        text-align: center;
+        color: #FFD200;
+        font-family: $font-titulo;
+        padding: 2rem;
+        h2{
+            font-size: 4rem;
+        }
+    }
+    .article-4{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        p{
+            padding: 2rem;
+            background-color: white;
+            margin: 2rem;
+            border-radius: 1rem;
+            box-shadow: $sombra;
+            font-family: $font-texto;
+        }
+    }
+}
+
+.section-5{
+    height: 100vh;
+    background:linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+    url(../image/warriors\ vs\ rocketts.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .contenedor-slide{
+        height: 32rem;
+        width: 46rem;
+        .slider{
+            border-radius: 10px;
+            margin: 1rem;
+            padding: 0;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                opacity: 0;
+                width: inherit;
+                height: inherit;
+                transition: opacity .5s;
+                p{
+                    border-radius: 10px;
+                    background:rgba(20, 20, 20, 0.6);
+                    position: absolute;
+                    opacity: 1;
+                    width: 37rem;
+                    bottom: 4rem;
+                    color: white;
+                    padding: 1rem;
+                    font-size: 0.9rem;
+                    font-family: $font-texto;
+                }
+                img{
+                    width: 44rem;
+                    height: 30rem;
+                    border-radius: 10px;
+                    position: absolute;
+                    object-fit: cover;
+                }
+                &:target{
+                    opacity: 1;
+                }
+            }
+            :nth-child(1){
+                opacity: 1;
+            }
+        }
+
+    }
+}
+.section-6{
+    text-align: center;
+    height: 100vh;
+    background:linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+    url(../image/curry\ lebron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    img{
+        width: 35rem;
+        border-radius: 10px;
+        margin: 2rem;
+    }
+    .title{
+        text-align: center;
+        color: #FFD200;
+        font-family: $font-titulo;
+        padding: 2rem;
+        h2{
+            font-size: 4rem;
+        }
+    }
+    .article-6{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        p{
+            padding: 2rem;
+            background-color: white;
+            margin: 2rem;
+            border-radius: 1rem;
+            box-shadow: $sombra;
+            font-family: $font-texto;
+        }
+    }
+}
+.section-7{
+    text-align: center;
+    height: 100vh;
+    background:linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+    url(../image/dray\ vs\ bron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 35rem;
+        border-radius: 10px;
+        margin: 2rem;
+    }
+    .title{
+        text-align: center;
+        color: #FFD200;
+        font-family: $font-titulo;
+        padding: 2rem;
+        h2{
+            font-size: 4rem;
+        }
+    }
+    .article-7{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        p{
+            padding: 2rem;
+            background-color: white;
+            margin: 2rem;
+            border-radius: 1rem;
+            box-shadow: $sombra;
+            font-family: $font-texto;
+        }
+    }
+}
+.section-8{
+    text-align: center;
+    height: 100vh;
+    background:linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+    url(../image/tiro\ de\ irving.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    iframe{
+        width: 35rem;
+        border-radius: 10px;
+        margin: 2rem;
+    }
+    .title{
+        text-align: center;
+        color: #FFD200;
+        font-family: $font-titulo;
+        padding: 2rem;
+        h2{
+            font-size: 4rem;
+        }
+    }
+    .article-8{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        p{
+            padding: 2rem;
+            background-color: white;
+            margin: 2rem;
+            border-radius: 1rem;
+            box-shadow: $sombra;
+            font-family: $font-texto;
+        }
+    }
+}
+.menu{
+    text-align: center;
+    margin: 2rem;
+    padding: 10px;
+
+    li{
+        display: inline-block;
+        background-color: white;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 100%;
+        margin: 0 0.5rem; 
+        transition: all 0.2s;
+        &:hover{
+            transform: scale(1.2);
+            box-shadow: $sombra;
+        }
+        a{
+            text-align: center;
+            display: inline-block;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 1rem;
+            font-size: 1.2rem;
+            border-radius: 100%;
+            font-family: $font-anchors; 
+        }
+    }
+}
+@media  screen and (max-width: 768px){
+    .texto-presentacion{
+        margin: 1rem;
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1rem;
+            padding: 2rem 5rem;
+        }
+    }
+    .seccion-inicial{
+        .boton-volver{
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+    .intro{
+        background: url(../image/warriors\ 73-9.jpg);
+        background-size: cover;
+        img{
+            display: none;
+        }
+        p{
+            margin: 1rem;
+            margin-top: 20rem;
+            color: white;
+            font-size: 0.9rem;
+            background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+        }
+    }
+    .section{
+        background: url(../image/dray\ 5x5.jpg);
+        background-size: cover;
+        img{
+            display: none;
+        }
+        h2{
+            padding: 0;
+            margin: 1rem;
+        }
+        .article{
+            p{
+                margin: 1rem;
+                margin-top: 10rem;
+                color: white;
+                font-size: 0.9rem;
+                background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+            }
+        }
+    }
+    .section-2{
+        background: url(../image/dray\ y\ curry\ 2015.webp);
+        background-size: cover;
+        img{
+            display: none;
+        }
+        h2{
+            padding: 0;
+            margin: 1rem;
+        }
+        .article-2{
+            p{
+                margin: 1rem;
+                margin-top: 10rem;
+                color: white;
+                font-size: 0.8rem;
+                background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+            }
+        }
+    }
+    .section-3{
+        background: url(../image/curry\ vs\ dallas.jpg);
+        background-size: cover;
+        img{
+            display: none;
+        }
+        h2{
+            padding: 0;
+            margin: 1rem;
+        }
+        .article-3{
+            p{
+                margin: 1rem;
+                margin-top: 10rem;
+                color: white;
+                font-size: 0.8rem;
+                background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+            }
+        }
+    }
+    .section-4{
+        background: url(../image/curry\ abril.jpg);
+        background-size: cover;
+        img{
+            display: none;
+        }
+        h2{
+            padding: 0;
+            margin: 1rem;
+        }
+        .article-4{
+            p{
+                margin: 1rem;
+                margin-top: 10rem;
+                color: white;
+                font-size: 0.8rem;
+                background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+            }
+        }
+    }
+    .section-5{
+        .contenedor-slide{
+            width: 40rem;
+            height: 26rem;
+            .slider{
+                li{
+                    img{
+                        width: 38rem;
+                        height: 25rem;
+                    }
+                }
+
+            }
+        }
+    }
+    .section-6{
+        background: url(../image/curry\ lebron.jpg);
+        background-size: cover;
+        img{
+            display: none;
+        }
+        h2{
+            padding: 0;
+            margin: 1rem;
+        }
+        .article-6{
+            p{
+                margin: 1rem;
+                margin-top: 8rem;
+                color: white;
+                font-size: 0.8rem;
+                background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+            }
+        }
+    }
+    .section-7{
+        background: url(../image/dray\ vs\ bron.jpg);
+        background-size: cover;
+        img{
+            display: none;
+        }
+        h2{
+            padding: 0;
+            margin: 1rem;
+        }
+        .article-7{
+            p{
+                margin: 1rem;
+                margin-top: 20rem;
+                color: white;
+                font-size: 0.8rem;
+                background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+            }
+        }
+    }
+    .section-8{
+        height: 100%;
+        background: url(../image/tiro\ de\ irving.jpg);
+        background-size: cover;
+        background-position: center;
+        img{
+            display: none;
+        }
+        h2{
+            padding: 0;
+            margin: 1rem;
+        }
+        .article-8{
+            flex-direction: column;
+            p{
+                margin: 1rem;
+                margin-top: 5rem;
+                color: white;
+                font-size: 0.8rem;
+                background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+            }
+        }
+    }
+}
+@media  screen and (max-width: 368px){
+    .texto-presentacion{
+        margin: 1rem;
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1rem;
+            padding: 1rem 1rem;
+        }
+    }
+    .seccion-inicial{
+        .fondo{
+            background:  linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),url(../image/curry\ mobile.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    .intro{
+        background: url(../image/warriors\ 73-9.jpg);
+        background-size: cover;
+        background-position: center;
+        img{
+            display: none;
+        }
+        p{
+            margin: 1rem;
+            margin-top: 2rem;
+            color: white;
+            font-size: 0.9rem;
+            background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+        }
+    }
+    .section{
+        background: url(../image/dray\ 5x5.jpg);
+        background-size: cover;
+        background-position: center;
+        img{
+            display: none;
+        }
+        h2{
+            padding: 0;
+            margin: 1rem;
+        }
+        .article{
+            p{
+                margin: 1rem;
+                margin-top: 1rem;
+                color: white;
+                font-size: 0.9rem;
+                background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+            }
+        }
+        .title{
+            padding: 0.5rem;
+        }
+    }
+    .section-2{
+        background: url(../image/dray\ y\ curry\ 2015.webp);
+        background-size: cover;
+        background-position: left 1px;
+        img{
+            display: none;
+        }
+        h2{
+            padding: 0;
+            margin: rem;
+            font-size: 1rem;
+        }
+        .article-2{
+            p{
+                margin: 1rem;
+                margin-top: 1rem;
+                color: white;
+                font-size: 0.8rem;
+                background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+            }
+        }
+        .title{
+            padding: 0.5rem;
+        }
+    }
+    .section-3{
+        background: url(../image/curry\ vs\ dallas.jpg);
+        background-size: cover;
+        background-position: center;
+        img{
+            display: none;
+        }
+        h2{
+            padding: 0;
+            margin: 1rem;
+        }
+        .article-3{
+            p{
+                margin: 1rem;
+                margin-top: 1rem;
+                color: white;
+                font-size: 0.8rem;
+                background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+            }
+        }
+    }
+    .section-4{
+        background: url(../image/curry\ abril.jpg);
+        background-size: cover;
+        background-position: center;
+        img{
+            display: none;
+        }
+        h2{
+            padding: 0;
+            margin: 1rem;
+        }
+        .article-4{
+            p{
+                margin: 1rem;
+                margin-top: 0.2rem;
+                color: white;
+                font-size: 0.8rem;
+                background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+            }
+        }
+        .title{
+            padding: 1rem;
+        }
+    }
+    .section-5{
+        display: none;
+    }
+    .section-6{
+        display: none;
+    }
+    .section-7{
+        display: none;
+    }
+    .section-8{
+        display: none;
+    }
+    .section8-mobile{
+        height: 100vh;
+        display: block;
+        background: url(../image/curry\ lebron.jpg);
+        background-size: cover;
+        
+        img{
+            display: none;
+        }
+        h2{
+            padding: 0;
+            margin: 1rem;
+        }
+        .title{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h2{
+                font-family: $font-titulo;
+                font-size: 3rem;
+                color: #FFD200;
+            }
+        }
+        p{
+            border-radius: 1rem;
+            font-family: $font-texto;
+            padding: 1rem;
+            color: white;
+            font-size: 0.9rem;
+            margin: 1rem;
+            margin-top: 10rem;
+            color: white;
+            font-size: 0.8rem;
+            background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+        }
+    }
+    .section8-mobile2{
+        height: 100%;
+        display: block;
+        background: url(../image/curry\ lebron.jpg);
+        background-size: cover;
+        
+        img{
+            display: none;
+        }
+        h2{
+            padding: 0;
+            margin: 1rem;
+        }
+        .title{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h2{
+                font-family: $font-titulo;
+                font-size: 3rem;
+                color: #FFD200;
+            }
+        }
+        p{ 
+            border-radius: 1rem;
+            font-family: $font-texto;
+            padding: 1rem;
+            color: white;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            color: white;
+            font-size: 0.8rem;
+            background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+        }
+        .article-mobile2{
+            iframe{
+                width: 21rem;
+                border-radius: 10px;
+                margin: 1rem;
+            }
+        }
+    }
+}
+    
