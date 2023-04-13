@@ -443,6 +443,373 @@ $font-anchors: 'Golos Text', sans-serif;
         }
     }
 }
+@media  screen and (max-width: 1071px){
+    .seccion-inicial{
+        .fondo{
+            .texto-presentacion{
+                margin: 1rem;
+                h1{
+                    font-size: 4rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .intro{
+        .article-intro{
+            img{
+                width: 30rem;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .section{
+        .title{
+            padding: 1rem;
+        }
+        .article{
+            img{
+                width: 30rem;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .section-2{
+        .title{
+            padding: 1rem;
+        }
+        .article-2{
+            img{
+                width: 30rem;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .section-3{
+        .title{
+            padding: 1rem;
+        }
+        .article-3{
+            p{
+                font-size: 0.9rem;
+            }
+            img{
+                width: 30rem;
+            }
+        }
+    }
+    .section-4{
+        .title{
+            padding: 1rem;
+        }
+        .article-4{
+            p{
+                font-size: 0.9rem;
+            }
+            img{
+                width: 30rem;
+            }
+        }
+    }
+    .section-5{
+        .contenedor-slide{
+            height: 25rem;
+            width: 44rem;
+            .slider{
+                li{
+                    img{
+                        width: 42rem;
+                        height: 23rem;
+                    }
+                }
+            }
+        }
+        .container-menu{
+            .menu{
+                margin: 1rem;
+            }
+        }
+    }
+    .section-6{
+        .title{
+            padding: 1rem;
+        }
+        .article-6{
+            img{
+                width: 30rem;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .section-7{
+        .title{
+            padding: 1rem;
+        }
+        .article-7{
+            img{
+                width: 30rem;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .section-8{
+        .title{
+            padding: 1rem;
+        }
+        .article-8{
+            iframe{
+                width: 30rem;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+@media  screen and (max-width: 940px){
+    .section{
+        .title{
+            h2{
+                font-size: 3rem;
+            }
+        }
+        .article{
+            img{
+                width: 25rem;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .section-2{
+        .title{
+            h2{
+                font-size: 3rem;
+            }
+        }
+        .article-2{
+            p{
+                font-size: 0.8rem;
+            }
+            img{
+                width: 25rem;
+            }
+        }
+    }
+    .section-3{
+        .title{
+            h2{
+                font-size: 3rem;
+            }
+        }
+        .article-3{
+            p{
+                font-size: 0.8rem;
+            }
+            img{
+                width: 25rem;
+            }
+        }
+    }
+    .section-4{
+        .title{
+            h2{
+                font-size: 3rem;
+            }
+        }
+        .article-4{
+            p{
+                font-size: 0.8rem;
+            }
+            img{
+                width: 25rem;
+            }
+        }
+    }
+    .section-5{
+        .contenedor-slide{
+            height: 21rem;
+            width: 40rem;
+            .slider{
+                li{
+                    p{
+                        font-size: 0.7rem;
+                    }
+                    img{
+                        width: 38rem;
+                        height: 19rem;
+                    }
+                }
+            }
+        }
+        .container-menu{
+            .menu{
+                margin: 1rem;
+            }
+        }
+    }
+    .section-6{
+        .title{
+            h2{
+                font-size: 3rem;
+            }
+        }
+        .article-6{
+            p{
+                font-size: 0.8rem;
+            }
+            img{
+                width: 25rem;
+            }
+        }
+    }
+    .section-7{
+        .title{
+            h2{
+                font-size: 3rem;
+            }
+        }
+        .article-7{
+            p{
+                font-size: 0.8rem;
+            }
+            img{
+                width: 25rem;
+            }
+        }
+    }
+    .section-8{
+        .title{
+            h2{
+                font-size: 3rem;
+            }
+        }
+        .article-8{
+            p{
+                font-size: 0.8rem;
+            }
+            iframe{
+                width: 25rem;
+            }
+        }
+    }
+}
+@media  screen and (max-width: 820px){
+    .intro{
+        .article-intro{
+            flex-direction: column;
+            p{
+                font-size: 0.8rem;
+            }
+            img{
+                width: 25rem;
+            }
+        }
+    }
+    .section{
+        .title{
+            padding: 0;
+        }
+        .article{
+            flex-direction: column;
+            p{
+                font-size: 0.8rem;
+            }
+            img{
+                width: 20rem;
+                margin: 1rem;
+            }
+        }
+    }
+    .section-2{
+        .title{
+            padding: 0;
+        }
+        .article-2{
+            flex-direction: column;
+            p{
+                font-size: 0.8rem;
+            }
+            img{
+                width: 22rem;
+                margin: 1rem;
+            }
+        }
+    }
+    .section-3{
+        .title{
+            padding: 0;
+        }
+        .article-3{
+            flex-direction: column;
+            p{
+                font-size: 0.8rem;
+            }
+            img{
+                width: 22rem;
+                margin: 1rem;
+            }
+        }
+    }
+    .section-4{
+        .title{
+            padding: 0;
+        }
+        .article-4{
+            flex-direction: column;
+            p{
+                font-size: 0.8rem;
+            }
+            img{
+                width: 20rem;
+                margin: 1rem;
+            }
+        }
+    }
+    .section-6{
+        .title{
+            padding: 0;
+        }
+        .article-6{
+            flex-direction: column;
+            p{
+                font-size: 0.8rem;
+            }
+            img{
+                width: 20rem;
+                margin: 1rem;
+            }
+        }
+    }
+    .section-7{
+        .title{
+            padding: 0;
+        }
+        .article-7{
+            flex-direction: column;
+            p{
+                font-size: 0.8rem;
+            }
+            img{
+                width: 20rem;
+                margin: 1rem;
+            }
+        }
+    }
+}
 @media  screen and (max-width: 768px){
     .texto-presentacion{
         margin: 1rem;
@@ -631,6 +998,27 @@ $font-anchors: 'Golos Text', sans-serif;
                 font-size: 0.8rem;
                 background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
             }
+        }
+    }
+}
+@media  screen and (max-width: 700px){
+    .section-5{
+        display: none;
+        .contenedor-slide{
+            display: none;
+            height: 17rem;
+            width: 36rem;
+            .slider{
+                li{
+                    img{
+                        width: 34rem;
+                        height: 15rem;
+                    }
+                }
+            }
+        }
+        .menu{
+            display: none;
         }
     }
 }
@@ -854,4 +1242,4 @@ $font-anchors: 'Golos Text', sans-serif;
         }
     }
 }
-    
+

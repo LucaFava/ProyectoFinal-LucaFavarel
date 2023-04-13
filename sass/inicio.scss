@@ -6,6 +6,10 @@ url();
 $font-titulo:'Bebas Neue', cursive;
 $font-texto:'Roboto', sans-serif;
 // AJUSTES DE TAMAÑOS
+.menu-hamburguesa{
+    display: none;
+}
+
 .h1{
     font-family: 'Bebas Neue', cursive;
     display: flex;
@@ -58,7 +62,6 @@ $font-texto:'Roboto', sans-serif;
 }
 
 // SECCION 1
-
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -206,10 +209,91 @@ $font-texto:'Roboto', sans-serif;
 }
 
 
-
-
+// MEDIA QUERIES DE INICIO 900PX
+@media screen and (max-width: 900px){
+    .h1{
+        padding: 2rem;
+    }
+    .card-inicio-contenedor{
+        margin: 2rem;
+    }
+    .equipo1{
+        img{
+            width: 15rem;
+            height: 15rem;
+            padding: 2rem;
+        }
+        p{
+            font-family: 'Bebas Neue', cursive;
+            font-size: 3rem; 
+        }
+    }
+    // SECCION 1
+    .grid{
+        .video{
+            padding: 0;
+            iframe{
+                width: 400px;
+            }
+        }
+    }
+    // SECCION 2
+    .seccion2{
+        img{
+            height: 15rem;
+            width: 23rem;
+            border-radius: 10px;
+        }
+        p{
+            font-size: 0.9rem;
+        }
+        .texto-klay{
+            margin: 0;
+        }
+    }
+    .texto-wiggins{
+        margin: 0;
+    }
+    .texto-dray{
+        margin: 0;
+    }
+    .historia{
+        .img-contenedor-73-9{
+            img{
+                width: 25rem;
+                height: 20rem;
+            }
+        }
+    }
+    .titulo-seccion7{
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+    }
+    .boton{
+        width: 12rem;
+        height: 3.5rem;
+        a{
+            font-size: 1rem;
+        }
+    }
+    .jugada-semanal{
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+}
 // MEDIA QUERIES DE INICIO 768PX
 @media screen and (max-width: 768px){
+    .menu-hamburguesa{
+        display: block;
+    }
     .logo{
         width: 10rem;
         height: 5rem;
@@ -221,9 +305,12 @@ $font-texto:'Roboto', sans-serif;
     }
     // CARD DE INICIO
     .card-inicio-contenedor{
+        .h1{
+            padding: 1rem;
+        }
         padding: 1rem;
-        height: 300px;
-        margin: 1rem;
+        height: 18.75rem;
+        margin: 2rem 2rem;
         grid-template-columns: 2fr 1fr 2fr;
         border-bottom-style: 100px;
         background-color: rgb(207, 207, 207);
@@ -233,8 +320,8 @@ $font-texto:'Roboto', sans-serif;
             justify-content: center;
             align-items: center;
             img{
-                width: 12.5rem;
-                height: 12.5rem;
+                width: 12rem;
+                height: 12rem;
             }
             p{
                 font-size: 3rem;
@@ -242,94 +329,216 @@ $font-texto:'Roboto', sans-serif;
         }
     }
     // -------------------------
-    .video{
-        padding: 0rem;
-        iframe{
-            width: 300px;
-        }
-    }
     .grid{
-        padding: 1rem;
-        margin: 1rem;
         .article1{
-            margin-left: 2rem;
+            h2{
+                font-size: 3rem;
+            }
             p{
-                font-size: 0.9rem;
-                margin: 0rem;
+                font-size: 1rem;
+                margin: 0.5rem;
+            }
+        }
+        .video{
+            iframe{
+                width: 18rem;
+                margin-left: 2rem;
             }
         }
     }
-    .texto-klay{
-        padding: 1rem;
-        margin: 1rem;
-        }
-    .texto-wiggins{
-        margin: 1rem;
-        padding: 1rem;
-        }
-    .texto-dray{
-        margin: 1rem;
-        padding: 1rem;
-        }
-    .jugada-semanal{
-    margin: 1rem;
-    padding: 1rem;
-    p{
-        padding: 1rem;
-        font-size: 1.3rem;
-    }
-    h2{
-        font-size: 2.5rem;
-    }
-    }
     .seccion2{
-        padding: 1rem;
-        margin: 1rem;
+        grid-template-columns: 1fr;
         img{
-            width: 400px;
-            height: 250px;
+            height: 17rem;
+            width: 27rem;
+            border-radius: 10px;
         }
-        p{
-            font-size: 0.9rem;
-        }
-
     }
     .historia{
-        padding: 0rem;
-        margin: 0rem;
         grid-template-columns: 1fr;
-        height: 100vh;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        .img-contenedor-73-9{
+            margin: 2rem;
+            img{
+                width: 35rem;
+            }
+        }
+    }
+
+}
+// MEDIA QUERIES DE INICIO 650PX
+@media screen and (max-width: 650px){
+    .card-inicio-contenedor{
+        padding: 0;
+        grid-template-columns: 1fr;
+        height: 35rem;
+    }
+    .equipo1{
         img{
+            padding: 1rem 2rem;
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+    .datos{
+        p{
+            font-size: 1.2rem;
+        }
+        h2{
+            font-size: 3rem;
+        }
+    }
+    .grid{
+        padding: 0;
+        grid-template-columns: 1fr;
+        height: 30rem;
+        .article1{
+            h2{
+                margin: 1rem;
+            }
+            p{
+                margin: 1rem 2.5rem;
+            }
+        }
+        .video{
+            iframe{
+                margin: 2rem;
+                width: 20rem;
+                height: 12rem;
+            }
+        }
+    }
+    .seccion2{
+        padding: 0;
+        .img-klay{
+            img{
+                padding: 2rem;
+            }
+        }
+        .img-wiggins{
+            img{
+                padding: 2rem;
+            }
+        }
+        .img-dray{
+            img{
+                padding: 2rem;
+            }
+        }
+    }
+    .historia{
+        .img-contenedor-73-9{
+            img{
+                width: 25rem;
+                height: 15rem;
+            }
+        }
+    }
+}
+// MEDIA QUERIES DE INICIO 425PX
+@media screen and (max-width: 425px){
+    .seccion2{
+        .img-klay{
+            img{
+                width: 22rem;
+            }
+        }
+        .img-wiggins{
+            img{
+                width: 22rem;
+            }
+        }
+        .img-dray{
+            img{
+                width: 22rem;
+            }
+        }
+    }
+    .historia{
+        .img-contenedor-73-9{
+            img{
+                width: 22rem;
+            }
+        }
+    }
+}
+// MEDIA QUERIES DE INICIO 375PX
+@media screen and (max-width: 375px){
+    .h1{
+        padding: 1rem;
+        h1{
+            font-size: 3rem;
+        }
+    }
+    .grid{
+        margin: 1.5rem;
+        .article1{
+            h2{
+                margin: 1rem;
+                font-size: 2rem;
+            }
+        }
+        .video{
+            iframe{
+                width: 17rem;
+            }
+        }
+    }
+    .seccion2{
+        margin: 1.5rem;
+        .img-klay{
+            img{
+                width: 20rem;
+                padding: 2rem;
+            }
+        }
+        .img-wiggins{
+            img{
+                width: 20rem;
+            }
+        }
+        .img-dray{
+            img{
+                width: 20rem;
+            }
+        }
+    }
+    .jugada-semanal{
+        h2{
+            margin: 2rem;
+            font-size: 2rem;
+        }
+    }
+    .historia{
+        height: 100vh;
+        width: 100vw;
+        .img-contenedor-73-9{
+            margin: 0;
             position: absolute;
             width: 100%;
             height: 100%;
             object-fit: cover;
             left: 0;
-            border-radius: 0px;
+            img{
+                border-radius: 0;
+                width: 100%;
+                height: 100%;
+
+            }
         }
         .titulo-seccion7{
             position: relative;
-            top: 6.5rem;
+            top: 0rem;
             width: 100%;
-            
             color: white;
             background: rgb(0,0,0,.4);
             h2{
-                font-size: 3rem;
                 color: white;
             }
             p{
-                font-size: 1.3rem;
                 color: white;
-            }
-            .boton{
-                width: 10rem;
-                height: 4rem;
-                box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.9);
-                margin-top: 1rem;
-                a{
-                    font-size: 1.2rem;
-                }
             }
         }
     }
